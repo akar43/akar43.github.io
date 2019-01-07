@@ -1,0 +1,135 @@
+<html>
+<head>
+	<title> Category Shapes</title>
+	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+	<link href='paperstyle.css' rel='stylesheet' type='text/css'>
+	<script type="text/javascript">
+		function togglevis(elid){
+			el=document.getElementById(elid);
+			aelid=elid+"a";
+			ael=document.getElementById(aelid);
+			if(el.style.display=='none'){
+				el.style.display='inherit';
+				ael.innerHTML="[Hide BibTex]";
+			}else{
+				el.style.display='none';
+				ael.innerHTML="[BibTex]";
+			}
+		}
+	</script>
+</head>
+
+<body>
+	<a href="https://github.com/akar43/CategoryShapes"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/365986a132ccd6a44c23a9169022c0b5c890c387/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png"></a>
+	<div class="pageTitle">
+	Category-Specific Object Reconstruction from a Single Image<br>
+    <span class = "pageSubTitle"> Best Student Paper Award (CVPR 2015)</span><br><br>
+	<span class = "Authors">
+	<a href="http://cs.berkeley.edu/~akar"> Abhishek Kar* </a> &nbsp &nbsp
+	<a href = "http://cs.berkeley.edu/~shubhtuls"> Shubham Tulsiani* </a> &nbsp &nbsp
+	<a href = "http://cs.berkeley.edu/~carreira"> Joao Carreira </a> &nbsp &nbsp
+	<a href = "http://cs.berkeley.edu/~malik"> Jitendra Malik </a> <br><br>	
+	<a href = "http://www.berkeley.edu"> UC Berkeley </a>
+	</span>
+	</div>
+
+
+	<img class = "bannerImage" src="images/teaser.png">
+	<div class = "abstractTitle">
+	Abstract
+	</div>
+	<p class = "abstractText">
+	Object reconstruction from a single image - in the wild - is a problem where we can make progress and get meaningful results today. This is the main message of this paper, which introduces an automated pipeline with pixels as inputs and 3D surfaces of various rigid categories as outputs in images of realistic scenes. At the core of our approach are deformable 3D models that can be learned from 2D annotations available in existing object detection datasets, that can be driven by noisy automatic object segmentations and which we complement with a bottom-up module for recovering high-frequency shape details. We perform a comprehensive quantitative analysis and ablation study of our approach using the recently introduced PASCAL 3D+ dataset and show very encouraging automatic reconstructions on PASCAL VOC.
+	</p>
+		<div class = "material">
+					<a href="categoryshapes.pdf">[PDF]</a>
+					<a href="categoryShapesAbstract.pdf">[Extended Abstract]</a>
+					<a href="categoryshapes_supp.pdf">[Supplementary Material]</a>
+					<a href="https://www.dropbox.com/s/zl2szw82giwek1q/cvpr15poster.pdf?dl=0">[Poster]</a>
+					<a href="https://www.dropbox.com/s/wellg35jrk00x8v/cvpr15oral.key?dl=0">[Slides]</a>
+					<a href="http://techtalks.tv/talks/category-specific-object-reconstruction-from-a-single-image/61586/">[Talk]</a>
+					<a href="https://github.com/akar43/CategoryShapes">[Code]</a>
+					<a href="javascript:togglevis('cvpr15')" id = "cvpr15a">[Bibtex]</a>
+					<div style="display:none; margin-left:200px" id="cvpr15", align="left">
+						<pre class="bibtex">
+							@incollection{categoryShapesKar15,
+								author = {Abhishek Kar and 
+								Shubham Tulsiani and 
+								Jo{\~{a}}o Carreira and 
+								Jitendra Malik},
+								title = {Category-Specific Object 
+								Reconstruction from a Single Image},
+								booktitle = CVPR,
+								year = {2015},
+							}
+						</pre>
+					</div>
+		</div>
+	
+	<div class = "abstractTitle">
+	Learnt Shapes
+	</div>	
+	<div class = "video">
+	<table width="600px" border="0" align="center">
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/aeroplane_AllTrain.gif">
+	<p class = "paratextcenter">aeroplane</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/bicycle_AllTrain.gif">
+	<p class = "paratextcenter">bicycle</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/boat_AllTrain.gif">
+	<p class = "paratextcenter">boat</p>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/bus_AllTrain.gif">
+	<p class = "paratextcenter">bus</p>
+
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/car_AllTrain.gif">
+	<p class = "paratextcenter">car</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/chair_AllTrain.gif">
+	<p class = "paratextcenter">chair</p>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/motorbike_AllTrain.gif">
+	<p class = "paratextcenter">motorbike</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/train_AllTrain.gif">
+	<p class = "paratextcenter">train</p>
+	</td>
+	<td>
+	<img class = "collageImage" src="images/meanShapes/tvmonitor_AllTrain.gif">
+	<p class = "paratextcenter">tvmonitor</p>
+	</td>
+	</tr>
+	</table>
+	
+	</div>
+
+	<div class = "abstractTitle">
+	Videos
+	</div>	
+	<div class = "video">
+        <iframe width="720" height="405" src="https://www.youtube.com/embed/5XDwkazszRE" frameborder="0" allowfullscreen></iframe>
+	</div>
+	<div class="ackTitle">
+	Acknowledgements
+	</div>
+
+	<p class = "ackText">
+	This work was supported in part by NSF Award IIS-1212798 and ONR MURI-N00014-10-1-0933. Shubham Tulsiani was supported by the Berkeley fellowship and Joao Carreira was supported by the Portuguese Science Foundation, FCT, under grant SFRH/BPD/84194/2012. We gratefully acknowledge NVIDIA corporation for the donation of Tesla GPUs for this research.
+
+	</p>
+</body>
