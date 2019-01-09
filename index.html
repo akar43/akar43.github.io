@@ -103,6 +103,42 @@
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
+            <td width="33%" valign="top"><a href="sceneflow/sf-teaser.jpg"><img src="sceneflow/sf-teaser.jpg" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="sceneflow/sf_arxiv.pdf" id="SF">
+              <!-- <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+              <heading>Learning Independent Object Motion from Unlabelled Stereoscopic Videos</heading></a><br>
+              <a href="http://www.cs.berkeley.edu/~zhecao/">Zhe Cao</a>, <strong>Abhishek Kar</strong>, <a href="http://www.cs.berkeley.edu/~chaene/">Christian H&auml;ne</a>, <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik</a><br>
+              <em>arXiv:1901.01971</em>, 2019
+              <br></p>
+
+              <div class="paper" id="sf">
+                <a href="javascript:toggleblock('sf_abs')">abstract</a> |
+                <a shape="rect" href="javascript:togglebib('sf')" class="togglebib">bibtex</a> |
+                <!-- <a href="lsm/supplsm.pdf">supplementary</a> | -->
+                <a href="https://arxiv.org/abs/1901.01971">arxiv</a>
+
+                <p align="justify"> <i id="sf_abs">We present a system for learning motion of independently moving objects from stereo videos. The only human annotation used in our system are 2D object bounding boxes which introduce the notion of objects to our system. Unlike prior learning based work which has focused on predicting dense pixel-wise optical flow field and/or a depth map for each image, we propose to predict object instance specific 3D scene flow maps and instance masks from which we are able to derive the motion direction and speed for each object instance. Our network takes the 3D geometry of the problem into account which allows it to correlate the input images. We present experiments evaluating the accuracy of our 3D flow vectors, as well as depth maps and projected 2D optical flow where our jointly learned system outperforms earlier approaches trained for each task independently.</i></p>
+  
+                <pre xml:space="preserve">
+@incollection{sfCaoKHM2019,
+  author = {Zhe Cao and
+  Abhishek Kar and
+  Christian H\"ane and
+  Jitendra Malik},
+  title = {Learning Independent Object Motion 
+    from Unlabelled Stereoscopic Videos},
+  booktitle = arXiv:1901.01971,
+  year = {2019},
+  }
+  
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+          
+          <tr>
             <td width="33%" valign="top"><a href="lsm-teaser.png"><img src="lsm-teaser.png" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="lsm/lsm_nips17.pdf" id="LSM">
@@ -476,6 +512,9 @@ hideblock('3rcv_abs');
 </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('lsm_abs');
+  </script>
+<script xml:space="preserve" language="JavaScript">
+  hideblock('sf_abs');
   </script>
 </body>
 </html>
