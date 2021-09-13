@@ -80,11 +80,12 @@ Prior to this, I was the Machine Learning Lead at <a href="https://fyusion.com">
         <tr><td>
             <h2>News</h2>
             <ul>
-		    <li>Moved to <a href="https://arvr.google.com/">Google</a> as a senior research scientist in Jan 2020. </li>
-	    <li> Our <a href="https://fyusion.com/immersive3d">SIGGRAPH work</a> on photorealistic free viewpoint rendering was featured on <a href="https://www.forbes.com/sites/charliefink/2019/07/26/thisweek-in-xr-are-growth-predictions-coming-true">Forbes</a>, <a href="https://venturebeat.com/2019/07/25/fyusion-unveils-3d-imaging-tech-for-marketers-to-show-off-photorealistic-product-views/">VentureBeat</a> and more!</li>
-	    <li> <a href="https://fyusion.com/LLFF">Local Light Field Fusion</a> accepted at SIGGRAPH 2019.</li>
-	    <li> <a href="https://drive.google.com/open?id=1mTBOJefYp6_ZkWwgshcikQ_AI5nw1t7_">Paper</a> on 3D sceneflow prediction accepted at CVPR 2019.</li>	    
-            <li> <b>Dec 2017:</b> <a href="images/graduation.jpg">Graduated</a> from Berkeley. Started full-time at Fyusion.</li>
+              <li>Paper on generating <a href="https://varunjampani.github.io/slide/">3D photos</a> from a single image accepted at ICCV as an oral.</li>
+              <li>Moved to <a href="https://arvr.google.com/">Google</a> as a senior research scientist in Jan 2020. </li>
+              <li> Our <a href="https://fyusion.com/immersive3d">SIGGRAPH work</a> on photorealistic free viewpoint rendering was featured on <a href="https://www.forbes.com/sites/charliefink/2019/07/26/thisweek-in-xr-are-growth-predictions-coming-true">Forbes</a>, <a href="https://venturebeat.com/2019/07/25/fyusion-unveils-3d-imaging-tech-for-marketers-to-show-off-photorealistic-product-views/">VentureBeat</a> and more!</li>
+              <li> <a href="https://fyusion.com/LLFF">Local Light Field Fusion</a> accepted at SIGGRAPH 2019.</li>
+              <li> <a href="https://drive.google.com/open?id=1mTBOJefYp6_ZkWwgshcikQ_AI5nw1t7_">Paper</a> on 3D sceneflow prediction accepted at CVPR 2019.</li>	    
+              <li> <b>Dec 2017:</b> <a href="images/graduation.jpg">Graduated</a> from Berkeley. Started full-time at Fyusion.</li>
             </ul>
 		</td></tr>
         <tr><td>
@@ -94,10 +95,76 @@ Prior to this, I was the Machine Learning Lead at <a href="https://fyusion.com">
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
           <tr>
+            <td width="33%" valign="top"><a href="slide/slide_teaser.gif"><img src="slide/slide_teaser.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://varunjampani.github.io/slide/" id="">
+              <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>SLIDE: Single Image 3D Photography with Soft Layering and Depth-aware Inpainting</heading></a><br>
+              <a href="http://varunjampani.github.io"> Varun Jampani* </a>,
+ 
+<a href="https://scholar.google.com/citations?user=eZQNcvcAAAAJ&amp;hl=en"> Huiwen Chang*</a>,
+ 
+<a href="https://www.linkedin.com/in/kyle-sargent-784006134"> Kyle Sargent</a>,
+ 
+<strong>Abhishek Kar</strong>,
+ 
+<a href="https://research.google/people/RichardTucker/"> Richard Tucker</a>,
+ 
+<a href="https://research.google/people/107089/"> Michael Krainin</a>,
+
+<a href="https://www.linkedin.com/in/dominikkaeser"> Dominik Kaeser</a>,
+ 
+<a href="https://billf.mit.edu/"> William T. Freeman</a>,
+ 
+<a href="http://salesin.cs.washington.edu/"> David Salesin</a>,
+ 
+<a href="https://homes.cs.washington.edu/~curless/"> Brian Curless</a>,
+ 
+<a href="https://people.csail.mit.edu/celiu/"> Ce Liu </a>
+              <br><em>International Conference on Computer Vision (ICCV)</em>, 2021 <strong style="color:red">(Oral)</strong><br>
+              <br></p>
+
+              <div class="paper" id="SLIDE">
+                <a href="https://arxiv.org/abs/2109.01068">paper</a> /
+                <a href="https://varunjampani.github.io/slide/">project</a> /
+                <a href="https://varunjampani.github.io/papers/jampani21_SLIDE_supp.pdf">supplementary</a> /
+                <a href="https://www.youtube.com/watch?v=RQio7q-ueY8">video</a> /
+                <a href="javascript:toggleblock('slide_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('SLIDE')" class="togglebib">bibtex</a>
+		      
+
+                <p align="justify"> <i id="slide_abs">Single image 3D photography enables viewers to view a still image from novel viewpoints. Recent approaches combine monocular depth networks with inpainting networks to achieve compelling results. A drawback of these techniques is the use of hard depth layering, making them unable to model intricate appearance details such as thin hair-like structures. We present SLIDE, a modular and unified system for single image 3D photography that uses a simple yet effective soft layering strategy to better preserve appearance details in novel views. In addition, we propose a novel depth-aware training strategy for our inpainting module, better suited for the 3D photography task. The resulting SLIDE approach is modular, enabling the use of other components such as segmentation and matting for improved layering. At the same time, SLIDE uses an efficient layered depth formulation that only requires a single forward pass through the component networks to produce high quality 3D photos. Extensive experimental analysis on three view-synthesis datasets, in combination with user studies on in-the-wild image collections, demonstrate superior performance of our technique in comparison to existing strong baselines while being conceptually much simpler.</i></p>
+  
+                <pre xml:space="preserve">
+@inproceedings{jampani:ICCV:2021,
+	title = {SLIDE: Single Image 3D Photography with 
+  Soft Layering and Depth-aware Inpainting},
+	author = {Jampani, Varun and 
+  Chang, Huiwen and 
+  Sargent, Kyle and 
+  Kar, Abhishek and 
+  Tucker, Richard and 
+  Krainin, Michael and 
+  Kaeser, Dominik and 
+  Freeman, William T and 
+  Salesin, David and 
+  Curless, Brian and 
+  Liu, Ce},
+	booktitle={Proceedings of the IEEE 
+  International Conference on Computer Vision},
+  year={2021}
+}
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+          
+          
+          <tr>
             <td width="33%" valign="top"><a href="llff.gif"><img src="llff.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://fyusion.com/LLFF" id="">
-              <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
               <heading>Local Light Field Fusion: Practical View Synthesis with Prescriptive Sampling Guidelines</heading></a><br>
               <a href="http://people.eecs.berkeley.edu/~bmild/">Ben Mildenhall*</a>, <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan*</a>, <a href="https://scholar.google.com/citations?user=yZMAlU4AAAAJ">Rodrigo Ortiz-Cayon</a>, 
               <a href="http://faculty.cs.tamu.edu/nimak/">Nima Khademi Kalantari</a>, <a href="http://cseweb.ucsd.edu/~ravir/">Ravi Ramamoorthi</a>, <a href="https://www2.eecs.berkeley.edu/Faculty/Homepages/yirenng.html">Ren Ng</a>, <strong>Abhishek Kar</strong><br>
@@ -444,7 +511,8 @@ organization={ACM}
         </tr>
 
         </table>
-
+    
+    <!--    
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 		<tr><td>
 		<h2>Tech Showcase</h2>
@@ -469,6 +537,7 @@ organization={ACM}
         <td width="48%" align="center"><iframe width="80%" height="315" src="https://www.youtube.com/embed/SRNaq6h0X4g" frameborder="0" allowfullscreen></iframe>
       </tr>
     </table>
+    -->
 
 		<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
 		<tr><td>
@@ -560,6 +629,9 @@ hideblock('3rcv_abs');
   </script>
 <script xml:space="preserve" language="JavaScript">
   hideblock('llff_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('slide_abs');
   </script>
 </body>
 </html>
