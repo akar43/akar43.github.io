@@ -89,10 +89,52 @@ Prior to this, I was the Director of Machine Learning at <a href="https://fyusio
 		</td></tr>
         <tr><td>
             <h2>Publications</h2>
-            <p align="justify">I'm interested in 3D computer vision - more specifically inferring 3D shape (and related 3D properties) from image collections in the wild. More recently, I have also been interested in computational photography and producing immersive visual content using 3D inferred from images.</p>
+            <p align="justify">My primary research interests lie in 3D computer vision and computational photography. Specifically, I am excited about applied research problems with the potential to scale to billions of users.</p>
 		</td></tr>
         </table>
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            
+          <tr>
+            <td width="33%" valign="top"><a href="vio_init/vio_init.png"><img src="vio_init/vio_init.png" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://arxiv.org/abs/2204.09171" id="">
+              <heading>Learned Monocular Depth Priors in Visual-Inertial Initialization</heading></a><br>
+              Yunwen Zhou, <strong>Abhishek Kar</strong>, Eric Turner, Adarsh Kowdle, Chao X. Guo, Ryan C. DuToit, Konstantine Tsotsos<br>
+              <em>arXiv:2204.09171</em>, 2022
+              <br></p>
+
+              <div class="paper" id="VIOInit">
+                <a href="https://arxiv.org/abs/2204.09171">paper</a> /
+                <a href="javascript:toggleblock('vioinit_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('VIOInit')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="vioinit_abs">Visual-inertial odometry (VIO) is the pose estimation backbone for most AR/VR and autonomous robotic systems today, in both academia and industry. However, these systems are highly sensitive to the initialization of key parameters such as sensor biases, gravity direction, and metric scale. In practical scenarios where high-parallax or variable acceleration assumptions are rarely met (e.g. hovering aerial robot, smartphone AR user not gesticulating with phone), classical visual-inertial initialization formulations often become ill-conditioned and/or fail to meaningfully converge. In this paper we target visual-inertial initialization specifically for these low-excitation scenarios critical to in-the-wild usage. We propose to circumvent the limitations of classical visual-inertial structure-from-motion (SfM) initialization by incorporating a new learning-based measurement as a higher-level input. We leverage learned monocular depth images (mono-depth) to constrain the relative depth of features, and upgrade the mono-depth to metric scale by jointly optimizing for its scale and shift. Our experiments show a significant improvement in problem conditioning compared to a classical formulation for visual-inertial initialization, and demonstrate significant accuracy and robustness improvements relative to the state-of-the-art on public benchmarks, particularly under motion-restricted scenarios. We further extend this improvement to implementation within an existing odometry system to illustrate the impact of our improved initialization method on resulting tracking trajectories.</i></p>
+  
+                <pre xml:space="preserve">
+@misc{https://doi.org/10.48550/arxiv.2204.09171,
+  doi = {10.48550/ARXIV.2204.09171},  
+  url = {https://arxiv.org/abs/2204.09171},
+  author = {Zhou, Yunwen and 
+    Kar, Abhishek and 
+    Turner, Eric and 
+    Kowdle, Adarsh and 
+    Guo, Chao X. and 
+    DuToit, Ryan C. and 
+    Tsotsos, Konstantine},
+  title = {Learned Monocular Depth Priors in 
+    Visual-Inertial Initialization},
+  publisher = {arXiv},
+  year = {2022},
+  copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+
+                  </pre>
+                </div>
+            </td>
+
+        </tr>  
+
           <tr>
             <td width="33%" valign="top"><a href="slide/slide_teaser.gif"><img src="slide/slide_teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -631,6 +673,9 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('slide_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('vioinit_abs');
   </script>
 </body>
 </html>
