@@ -86,7 +86,87 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
     </table>
         
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-          <tr>
+      <tr>
+            <td width="33%" valign="top"><a href="https://depth-gen.github.io/assets/meeting.mp4"><img src="depthgen/meeting.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://depth-gen.github.io/" id="">
+              <heading>Monocular Depth Estimation using Diffusion Models</heading></a><br>
+              <a href="https://scholar.google.com/citations?user=WTz38osAAAAJ&hl=en">Saurabh Saxena</a>, 
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://norouzi.github.io/">Mohammad Norouzi</a><br>
+              <a href="https://www.cs.toronto.edu/~fleet/">David J. Fleet</a><br>
+              <em>arXiv:2302.14816</em>, 2023
+              <br></p>
+
+              <div class="paper" id="depthgen">
+                <a href="https://depth-gen.github.io/">project</a> /
+                <a href="https://arxiv.org/abs/2302.14816">paper</a> /
+                <a href="javascript:toggleblock('depthgen_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('depthgen')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="depthgen_abs">We formulate monocular depth estimation using denoising diffusion models, inspired by their recent successes in high fidelity image generation. To that end, we introduce innovations to address problems arising due to noisy, incomplete depth maps in training data, including step-unrolled denoising diffusion, an L1 loss, and depth infilling during training. To cope with the limited availability of data for supervised training, we leverage pre-training on self-supervised image-to-image translation tasks. Despite the simplicity of the approach, with a generic loss and architecture, our DepthGen model achieves SOTA performance on the indoor NYU dataset, and near SOTA results on the outdoor KITTI dataset. Further, with a multimodal posterior, DepthGen naturally represents depth ambiguity (e.g., from transparent surfaces), and its zero-shot performance combined with depth imputation, enable a simple but effective text-to-3D pipeline.</i></p>
+  
+                <pre xml:space="preserve">
+@misc{saxena2023monocular,
+  title={Monocular Depth Estimation using Diffusion Models},
+  author={Saurabh Saxena and Abhishek Kar and 
+    Mohammad Norouzi and David J. Fleet},
+  year={2023},
+  eprint={2302.14816},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
+}
+      
+                  </pre>
+                </div>
+            </td>
+
+        </tr> 
+
+      <tr>
+            <td width="33%" valign="top"><a href="rapsai/rapsai_teaser.jpg"><img src="rapsai/rapsai_img.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://duruofei.com/projects/rapsai/" id="">
+              <heading>Rapsai: Accelerating Machine Learning Prototyping of Multimedia Applications Through Visual Programming</heading></a><br>
+              <a href="https://duruofei.com/">Ruofei Du</a>, 
+              Na Li, Jing Jin, Michelle Carney, Scott Miles, Maria Kleiner, Xiuxiu Yuan, Yinda Zhang, Anuva Kulkarni, Xingyu "Bruce" Liu, Ahmed Sabie, Sergio Escolano, <strong>Abhishek Kar</strong>, Ping Yu, Ram Iyengar, Adarsh Kowdle, and Alex Olwal
+              <em>Proceedings of the Conference on Human Factors in Computing Systems (CHI)</em>, 2023
+              <br></p>
+
+              <div class="paper" id="rapsai">
+                <a href="https://duruofei.com/projects/rapsai/">project</a> /
+                <a href="https://www.youtube.com/watch?v=mQ5mvAbZYvc">video</a> /
+                <a href="https://duruofei.com/papers/Du_Rapsai-AcceleratingMachineLearningPrototypingOfMultimediaApplicationsThroughVisualProgramming_CHI2023.pdf">paper</a> /
+                <a shape="rect" href="javascript:togglebib('rapsai')" class="togglebib">bibtex</a>
+  
+                <pre xml:space="preserve">
+@inproceedings{Du2023Rapsai,
+  title = {{Rapsai: Accelerating Machine Learning Prototyping
+    of Multimedia Applications Through Visual Programming}},
+  author = {Du, Ruofei and Li, Na and 
+    Jin, Jing and Carney, Michelle and 
+    Miles, Scott and Kleiner, Maria and 
+    Yuan, Xiuxiu and Zhang, Yinda and
+    Kulkarni, Anuva and Liu, Xingyu and 
+    Sabie, Ahmed and Escolano, Sergio and 
+    Kar, Abhishek and Yu, Ping and 
+    Iyengar, Ram and Kowdle, Adarsh and 
+    Olwal, Alex},
+  booktitle = {Proceedings of the 2023 CHI 
+    Conference on Human Factors in Computing Systems},
+  year = {2023},
+  publisher = {ACM},
+  series = {CHI},
+  doi = {10.1145/3544548.3581338},
+}
+
+                  </pre>
+                </div>
+            </td>
+
+        </tr>    
+      
+      <tr>
             <td width="33%" valign="top"><a href="samurai/samurai_teaser.webp"><img src="samurai/samurai.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://markboss.me/publication/2022-samurai/" id="">
@@ -180,7 +260,6 @@ year = {2022},
             <td width="33%" valign="top"><a href="slide/slide_teaser.gif"><img src="slide/slide_teaser.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://varunjampani.github.io/slide/" id="">
-              <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
               <heading>SLIDE: Single Image 3D Photography with Soft Layering and Depth-aware Inpainting</heading></a><br>
               <a href="http://varunjampani.github.io"> Varun Jampani* </a>,
  
@@ -720,6 +799,9 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('samurai_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('depthgen_abs');
   </script>
 </body>
 </html>
