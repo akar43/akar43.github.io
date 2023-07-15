@@ -31,6 +31,11 @@
         font-size: 15px;
         font-weight: 700
   }
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 
   </style>
@@ -63,8 +68,8 @@
 
 
 		    <p>
-I am currently a Staff Research Scientist and Manager at <a href="https://arvr.google.com/">Google AR</a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos</a> and portrait mode for Google Pixel.<br><br>
-Prior to Google, I was the Director of Machine Learning at <a href="https://fyusion.com">Fyusion Inc.</a>, a 3D photography startup based in San Francisco where we shipped multiple 3D technologies including <a href="https://bmild.github.io/llff/">casual light field capture</a>, <a href="https://fyusion.com/inspect3d/">AI-driven damage estimation</a>, creation of <a href="https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/">user generated AR/VR content</a> and <a href="https://blog.fyu.se/all-stories/introducing-whisky16">real-time style transfer on mobile devices</a>.
+I am currently a Staff Research Scientist and Manager at <a href="https://arvr.google.com/">Google AR/VR></a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos</a> and portrait mode for Google Pixel.<br><br>
+Prior to Google, I was the Director of Machine Learning at <a href="https://fyusion.com">Fyusion Inc.</a>, a spatial photography startup based in San Francisco where we shipped multiple 3D technologies including <a href="https://bmild.github.io/llff/">casual light field capture</a>, <a href="https://fyusion.com/inspect3d/">AI-driven damage estimation</a>, creation of <a href="https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/">user generated AR/VR content</a> and <a href="https://blog.fyu.se/all-stories/introducing-whisky16">real-time style transfer on mobile devices</a>.
 I graduated from UC Berkeley in 2017 from <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik's</a> group working on learnt 3D object reconstruction.
 I have also spent time at <a href="http://research.microsoft.com/en-us/">Microsoft Research</a> and <a href="https://research.adobe.com/">Adobe Research</a>.
 
@@ -86,55 +91,57 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
     </table>
         
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      <tr>
+            <td width="33%" valign="top"><a href="https://depth-gen.github.io/assets/meeting.mp4"><img src="depthgen/meeting.gif" width="100%" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://diffusion-vision.github.io/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>The Surprising Effectiveness of Diffusion Models for Optical Flow and Monocular Depth Estimation</heading></a><br>
+              <a href="https://scholar.google.com/citations?user=WTz38osAAAAJ&hl=en">Saurabh Saxena</a>, 
+              <a href="https://scholar.google.com/citations?user=LQvi5XAAAAAJ&hl=en">Charles Hermnann</a>, 
+              <a href="https://hurjunhwa.github.io/">Junwa Hur</a>, 
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://norouzi.github.io/">Mohammad Norouzi</a>,
+              <a href="https://deqings.github.io/">Deqing Sun</a>, 
+              <a href="https://www.cs.toronto.edu/~fleet/">David J. Fleet</a><br>
+              <em>arXiv:2306.01923</em>, 2023
+              <br></p>
 
-    <tr>
-        <td width="33%" valign="top"><a href="https://defocus-control.github.io/videos_compressed/teaser.mp4"><img src="dc2/dc2.gif" width="100%" style="border-style: none"></a>
-        <td width="67%" valign="top">
-          <p><a href="https://defocus-control.github.io/" id="">
-          <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
-          <heading>DC^2: Dual-Camera Defocus Control by Learning to Refocus</heading></a><br>
-          <a href="https://hadizayer.github.io/">Hadi Alzayer</a>, 
-          <a href="https://sites.google.com/view/abdullah-abuolaim/">Abdullah Abuolaim</a>, 
-          <a href="https://www.linkedin.com/in/ryan-chan-74599014/">Leung Chun Chan</a>, 
-          <a href="https://www.linkedin.com/in/yang-yang-92b5a3160/">Yang Yang</a>, 
-          <a href="https://www.linkedin.com/in/ying-chen-lou-1175542/">Ying Chen Lou</a>, 
-          <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>, 
-          <strong>Abhishek Kar</strong><br>
-          <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2023
-          <br></p>
-
-          <div class="paper" id="dc2">
-            <a href="https://defocus-control.github.io/">project</a> /
-            <a href="https://t.co/bJnAWGcT8b">arxiv</a> /
-            <a href="javascript:toggleblock('dc2_abs')">abstract</a> /
-            <a href="https://www.youtube.com/watch?v=q9_tM6_5Nq8">video</a> /
-            <a shape="rect" href="javascript:togglebib('dc2')" class="togglebib">bibtex</a>
-            <p align="justify"> <i id="dc2_abs">Smartphone cameras today are increasingly approaching the versatility and quality of professional cameras through a combination of hardware and software advancements. However, fixed aperture remains a key limitation, preventing users from controlling the depth of field (DoF) of captured images. At the same time, many smartphones now have multiple cameras with different fixed apertures -- specifically, an ultra-wide camera with wider field of view and deeper DoF and a higher resolution primary camera with shallower DoF. In this work, we propose DC^2, a system for defocus control for synthetically varying camera aperture, focus distance and arbitrary defocus effects by fusing information from such a dual-camera system. Our key insight is to leverage real-world smartphone camera dataset by using image refocus as a proxy task for learning to control defocus. Quantitative and qualitative evaluations on real-world data demonstrate our system's efficacy where we outperform state-of-the-art on defocus deblurring, bokeh rendering, and image refocus. Finally, we demonstrate creative post-capture defocus control enabled by our method, including tilt-shift and content-based defocus effects.</i></p>
-            <pre xml:space="preserve">
-@inproceedings{alzayer2023defocuscontrol,
-title={DC2: Dual-Camera Defocus Control by 
-  Learning to Refocus},
-author={Alzayer, Hadi and 
-  Abuolaim, Abdullah and 
-  Chun Chan, Leung and 
-  Yang, Yang and 
-  Chen Lou, Ying and 
-  Huang, Jia-Bin and 
-  Kar, Abhishek},
-booktitle={Proceedings of the IEEE/CVF 
-  Conference on Computer Vision and 
-  Pattern Recognition},
-pages={--},
-year={2023}
+              <div class="paper" id="depthgen">
+                <a href="https://diffusion-vision.github.io/">project</a> /
+                <a href="https://arxiv.org/abs/2306.01923">paper</a> /
+                <a href="https://depth-gen.github.io/">previous version</a> /
+                <a href="javascript:toggleblock('depthgen_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('depthgen')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="depthgen_abs">Denoising diffusion probabilistic models have transformed image generation with their impressive fidelity and diversity. We show that they also excel in estimating optical flow and monocular depth, surprisingly, without task-specific architectures and loss functions that are predominant for these tasks. Compared to the point estimates of conventional regression-based methods, diffusion models also enable Monte Carlo inference, e.g., capturing uncertainty and ambiguity in flow and depth. With self-supervised pre-training, the combined use of synthetic and real data for supervised training, and technical innovations (infilling and step-unrolled denoising diffusion training) to handle noisy-incomplete training data, and a simple form of coarse-to-fine refinement, one can train state-of-the-art diffusion models for depth and optical flow estimation. Extensive experiments focus on quantitative performance against benchmarks, ablations, and the model's ability to capture uncertainty and multimodality, and impute missing values. Our model, DDVM (Denoising Diffusion Vision Model), obtains a state-of-the-art relative depth error of 0.074 on the indoor NYU benchmark and an Fl-all outlier rate of 3.26% on the KITTI optical flow benchmark, about 25% better than the best published method.</i></p>
+  
+                <pre xml:space="preserve">
+@misc{saxena2023surprising,
+title={The Surprising Effectiveness of Diffusion 
+  Models for Optical Flow and Monocular Depth 
+  Estimation},
+author={Saurabh Saxena and 
+  Charles Herrmann and 
+  Junhwa Hur and 
+  Abhishek Kar and 
+  Mohammad Norouzi and 
+  Deqing Sun and 
+  David J. Fleet},
+year={2023},
+eprint={2306.01923},
+archivePrefix={arXiv},
+primaryClass={cs.CV}
 }
-              </pre>
-            </div>
-        </td>
+      
+                  </pre>
+                </div>
+            </td>
 
-    </tr>
+        </tr> 
 
-    <tr>
-          <td width="33%" valign="top"><a href="asic/asic.jpeg"><img src="asic/asic.jpeg" width="100%" style="border-style: none"></a>
+      <tr>
+          <td width="33%" valign="top"><a href="https://kampta.github.io/asic/"><img src="asic/asic.gif" width="70%" class="center" style="border-style: none;"></a>
           <td width="67%" valign="top">
             <p><a href="https://kampta.github.io/asic/" id="">
             <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
@@ -146,7 +153,7 @@ year={2023}
             <a href="https://www.ameeshmakadia.com/">Ameesh Makadia</a>, 
             <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, 
             <strong>Abhishek Kar</strong><br>
-            <em>arXiv:2303.16201</em>, 2023
+            <em>International Conference on Computer Vision (ICCV)</em>, 2023
             <br></p>
 
             <div class="paper" id="asic">
@@ -177,37 +184,42 @@ author ={Gupta, Kamal and
           </td>
 
       </tr>
-      
       <tr>
-            <td width="33%" valign="top"><a href="https://depth-gen.github.io/assets/meeting.mp4"><img src="depthgen/meeting.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="https://people.cs.umass.edu/~zezhoucheng/lu-nerf"><img src="lunerf/lunerf.jpg" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
-              <p><a href="https://depth-gen.github.io/" id="">
+              <p><a href="https://people.cs.umass.edu/~zezhoucheng/lu-nerf/" id="">
                 <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
-              <heading>Monocular Depth Estimation using Diffusion Models</heading></a><br>
-              <a href="https://scholar.google.com/citations?user=WTz38osAAAAJ&hl=en">Saurabh Saxena</a>, 
+              <heading>LU-NeRF: Scene and Pose Estimation by Synchronizing Local Unposed NeRFs</heading></a><br>
+              <a href="http://people.cs.umass.edu/~zezhoucheng">Zezhou Cheng</a>, 
+              <a href="https://machc.github.io/">Carlos Esteves</a>, 
+              <a href="https://varunjampani.github.io/">Varun Jampani</a>, 
               <strong>Abhishek Kar</strong>, 
-              <a href="https://norouzi.github.io/">Mohammad Norouzi</a><br>
-              <a href="https://www.cs.toronto.edu/~fleet/">David J. Fleet</a><br>
-              <em>arXiv:2302.14816</em>, 2023
+              <a href="http://people.cs.umass.edu/~smaji/">Subhransu Maji</a>,
+              <a href="https://www.ameeshmakadia.com/">Ameesh Makadia</a><br>
+              <em>International Conference on Computer Vision (ICCV)</em>, 2023
               <br></p>
 
-              <div class="paper" id="depthgen">
-                <a href="https://depth-gen.github.io/">project</a> /
-                <a href="https://arxiv.org/abs/2302.14816">paper</a> /
-                <a href="javascript:toggleblock('depthgen_abs')">abstract</a> /
-                <a shape="rect" href="javascript:togglebib('depthgen')" class="togglebib">bibtex</a>
+              <div class="paper" id="lunerf">
+                <a href="https://people.cs.umass.edu/~zezhoucheng/lu-nerf/">project</a> /
+                <a href="http://arxiv.org/abs/2306.05410">paper</a> /
+                <a href="javascript:toggleblock('lunerf_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('lunerf')" class="togglebib">bibtex</a>
 		      
-                <p align="justify"> <i id="depthgen_abs">We formulate monocular depth estimation using denoising diffusion models, inspired by their recent successes in high fidelity image generation. To that end, we introduce innovations to address problems arising due to noisy, incomplete depth maps in training data, including step-unrolled denoising diffusion, an L1 loss, and depth infilling during training. To cope with the limited availability of data for supervised training, we leverage pre-training on self-supervised image-to-image translation tasks. Despite the simplicity of the approach, with a generic loss and architecture, our DepthGen model achieves SOTA performance on the indoor NYU dataset, and near SOTA results on the outdoor KITTI dataset. Further, with a multimodal posterior, DepthGen naturally represents depth ambiguity (e.g., from transparent surfaces), and its zero-shot performance combined with depth imputation, enable a simple but effective text-to-3D pipeline.</i></p>
+                <p align="justify"> <i id="lunerf_abs">A critical obstacle preventing NeRF models from being deployed broadly in the wild is their reliance on accurate camera poses. Consequently, there is growing interest in extending NeRF models to jointly optimize camera poses and scene representation, which offers an alternative to off-the-shelf SfM pipelines which have well-understood failure modes. Existing approaches for unposed NeRF operate under limited assumptions, such as a prior pose distribution or coarse pose initialization, making them less effective in a general setting. In this work, we propose a novel approach, LU-NeRF, that jointly estimates camera poses and neural radiance fields with relaxed assumptions on pose configuration. Our approach operates in a local-to-global manner, where we first optimize over local subsets of the data, dubbed mini-scenes. LU-NeRF estimates local pose and geometry for this challenging few-shot task. The mini-scene poses are brought into a global reference frame through a robust pose synchronization step, where a final global optimization of pose and scene can be performed. We show our LU-NeRF pipeline outperforms prior attempts at unposed NeRF without making restrictive assumptions on the pose prior. This allows us to operate in the general SE(3) pose setting, unlike the baselines. Our results also indicate our model can be complementary to feature-based SfM pipelines as it compares favorably to COLMAP on low-texture and low-resolution images.</i></p>
   
                 <pre xml:space="preserve">
-@misc{saxena2023monocular,
-  title={Monocular Depth Estimation using Diffusion Models},
-  author={Saurabh Saxena and Abhishek Kar and 
-    Mohammad Norouzi and David J. Fleet},
-  year={2023},
-  eprint={2302.14816},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@inproceedings{cheng2023lunerf,
+title={LU-NeRF: Scene and Pose Estimation 
+  by Synchronizing Local Unposed NeRFs},
+author={Cheng, Zezhou and 
+  Esteves, Carlos and 
+  Jampani, Varun and 
+  Kar, Abhishek and 
+  Maji, Subhransu and 
+  Makadia, Ameesh},
+booktitle={Proceedings of the IEEE 
+International Conference on Computer Vision},
+year={2023}
 }
       
                   </pre>
@@ -215,7 +227,53 @@ author ={Gupta, Kamal and
             </td>
 
         </tr> 
+    <tr>
+        <td width="33%" valign="top"><a href="https://defocus-control.github.io/videos_compressed/teaser.mp4"><img src="dc2/dc2.gif" width="80%" class="center" style="border-style: none"></a>
+        <td width="67%" valign="top">
+          <p><a href="https://defocus-control.github.io/" id="">
+          <heading>DC^2: Dual-Camera Defocus Control by Learning to Refocus</heading></a><br>
+          <a href="https://hadizayer.github.io/">Hadi Alzayer</a>, 
+          <a href="https://sites.google.com/view/abdullah-abuolaim/">Abdullah Abuolaim</a>, 
+          <a href="https://www.linkedin.com/in/ryan-chan-74599014/">Leung Chun Chan</a>, 
+          <a href="https://www.linkedin.com/in/yang-yang-92b5a3160/">Yang Yang</a>, 
+          <a href="https://www.linkedin.com/in/ying-chen-lou-1175542/">Ying Chen Lou</a>, 
+          <a href="https://jbhuang0604.github.io/">Jia-Bin Huang</a>, 
+          <strong>Abhishek Kar</strong><br>
+          <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2023
+          <br></p>
 
+          <div class="paper" id="dc2">
+            <a href="https://defocus-control.github.io/">project</a> /
+            <a href="https://t.co/bJnAWGcT8b">arxiv</a> /
+            <a href="javascript:toggleblock('dc2_abs')">abstract</a> /
+            <a href="https://www.youtube.com/watch?v=q9_tM6_5Nq8">video</a> /
+            <a href="https://www.youtube.com/watch?v=3Hs-tyr4FFA">two minute papers</a> /
+            <a shape="rect" href="javascript:togglebib('dc2')" class="togglebib">bibtex</a>
+            <p align="justify"> <i id="dc2_abs">Smartphone cameras today are increasingly approaching the versatility and quality of professional cameras through a combination of hardware and software advancements. However, fixed aperture remains a key limitation, preventing users from controlling the depth of field (DoF) of captured images. At the same time, many smartphones now have multiple cameras with different fixed apertures -- specifically, an ultra-wide camera with wider field of view and deeper DoF and a higher resolution primary camera with shallower DoF. In this work, we propose DC^2, a system for defocus control for synthetically varying camera aperture, focus distance and arbitrary defocus effects by fusing information from such a dual-camera system. Our key insight is to leverage real-world smartphone camera dataset by using image refocus as a proxy task for learning to control defocus. Quantitative and qualitative evaluations on real-world data demonstrate our system's efficacy where we outperform state-of-the-art on defocus deblurring, bokeh rendering, and image refocus. Finally, we demonstrate creative post-capture defocus control enabled by our method, including tilt-shift and content-based defocus effects.</i></p>
+            <pre xml:space="preserve">
+@inproceedings{alzayer2023defocuscontrol,
+title={DC2: Dual-Camera Defocus Control by 
+  Learning to Refocus},
+author={Alzayer, Hadi and 
+  Abuolaim, Abdullah and 
+  Chun Chan, Leung and 
+  Yang, Yang and 
+  Chen Lou, Ying and 
+  Huang, Jia-Bin and 
+  Kar, Abhishek},
+booktitle={Proceedings of the IEEE/CVF 
+  Conference on Computer Vision and 
+  Pattern Recognition},
+pages={--},
+year={2023}
+}
+              </pre>
+            </div>
+        </td>
+
+    </tr>
+
+      
       <tr>
             <td width="33%" valign="top"><a href="rapsai/rapsai_teaser.jpg"><img src="rapsai/rapsai_img.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -354,7 +412,7 @@ year = {2022},
         </tr>  
 
           <tr>
-            <td width="33%" valign="top"><a href="slide/slide_teaser.gif"><img src="slide/slide_teaser.gif" width="100%" style="border-style: none"></a>
+            <td width="33%" valign="top"><a href="slide/slide_teaser.gif"><img src="slide/slide_teaser.gif" width="90%" class="center" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://varunjampani.github.io/slide/" id="">
               <heading>SLIDE: Single Image 3D Photography with Soft Layering and Depth-aware Inpainting</heading></a><br>
@@ -379,7 +437,7 @@ year = {2022},
 <a href="https://homes.cs.washington.edu/~curless/"> Brian Curless</a>,
  
 <a href="https://people.csail.mit.edu/celiu/"> Ce Liu </a>
-              <br><em>International Conference on Computer Vision (ICCV)</em>, 2021 <strong style="color:red">(Oral)</strong><br>
+              <br><em>International Conference on Computer Vision (ICCV)</em>, 2021 <strong style="color:red">(Oral)</strong>
               <br></p>
 
               <div class="paper" id="SLIDE">
@@ -905,6 +963,9 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('dc2_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('lunerf_abs');
   </script>
 </body>
 </html>
