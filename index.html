@@ -92,6 +92,53 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
         
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
       <tr>
+            <td width="33%" valign="top"><a href="unsup_corr.png"><img src="unsup_corr.png" width="80%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://ubc-vision.github.io/LDM_correspondences/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>Unsupervised Semantic Correspondence Using Stable Diffusion</heading></a><br>
+              <a href="https://ehedlin.github.io/">Eric Hedlin</a>, 
+              <a href="https://hippogriff.github.io/">Gopal Sharma</a>, 
+              <a href="https://s-mahajan.github.io/">Shweta Mahajan</a>, 
+              <a href="http://www.hossamisack.com/">Hossam Isack</a>,
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://taiya.github.io/">Andrea Tagliasacchi</a>,
+              <a href="https://www.cs.ubc.ca/~kmyi/">Kwang Moo Yi</a><br>
+              <em>Neural Information Processing Systems (NeurIPS)</em>, 2023
+              <br></p>
+
+              <div class="paper" id="unsup_corr">
+                <a href="https://ubc-vision.github.io/LDM_correspondences/">project</a> /
+                <a href="https://arxiv.org/abs/2305.15581">paper</a> /
+                <a href="javascript:toggleblock('unsup_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('unsup_corr')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="unsup_abs">Text-to-image diffusion models are now capable of generating images that are often indistinguishable from real images. To generate such images, these models must understand the semantics of the objects they are asked to generate. In this work we show that, without any training, one can leverage this semantic knowledge within diffusion models to find semantic correspondences -- locations in multiple images that have the same semantic meaning. Specifically, given an image, we optimize the prompt embeddings of these models for maximum attention on the regions of interest. These optimized embeddings capture semantic information about the location, which can then be transferred to another image. By doing so we obtain results on par with the strongly supervised state of the art on the PF-Willow dataset and significantly outperform (20.9% relative for the SPair-71k dataset) any existing weakly or unsupervised method on PF-Willow, CUB-200 and SPair-71k datasets.</i></p>
+  
+                <pre xml:space="preserve">
+@inproceedings{hedlin2023unsupervised,
+  title={Unsupervised Semantic Correspondence
+    Using Stable Diffusion},
+  author={Eric Hedlin and 
+    Gopal Sharma and 
+    Shweta Mahajan and 
+    Hossam Isack and 
+    Abhishek Kar and 
+    Andrea Tagliasacchi and 
+    Kwang Moo Yi},
+  booktitle={arXiv preprint},
+  year={2023},
+  publisher_page={https://arxiv.org/abs/2305.15581},
+  homepage={https://ubc-vision.github.io/LDM_correspondences/}
+}
+      
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+      
+      <tr>
             <td width="33%" valign="top"><a href="https://depth-gen.github.io/assets/meeting.mp4"><img src="depthgen/meeting.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://diffusion-vision.github.io/" id="">
@@ -104,7 +151,7 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
               <a href="https://norouzi.github.io/">Mohammad Norouzi</a>,
               <a href="https://deqings.github.io/">Deqing Sun</a>, 
               <a href="https://www.cs.toronto.edu/~fleet/">David J. Fleet</a><br>
-              <em>arXiv:2306.01923</em>, 2023
+              <em>Neural Information Processing Systems (NeurIPS)</em>, 2023
               <br></p>
 
               <div class="paper" id="depthgen">
@@ -166,7 +213,7 @@ primaryClass={cs.CV}
                 Most prior works assume either ground-truth keypoint annotations or a large dataset of images of a single object category. However, neither of the above assumptions hold true for the long-tail of the objects present in the world. We present a self-supervised technique that directly optimizes on a sparse collection of images of a particular object/object category to obtain consistent dense correspondences across the collection.
                 We use pairwise nearest neighbors obtained from deep features of a pre-trained vision transformer (ViT) model as noisy and sparse keypoint matches and make them dense and accurate matches by optimizing a neural network that jointly maps the image collection into a learned canonical grid. Experiments on CUB and SPair-71k benchmarks demonstrate that our method can produce globally consistent and higher quality correspondences across the image collection when compared to existing self-supervised methods.</i></p>
               <pre xml:space="preserve">
-@article{gupta2023asic,
+@inproceedings{gupta2023asic,
 author ={Gupta, Kamal and 
   Jampani, Varun and 
   Esteves, Carlos and 
@@ -176,7 +223,8 @@ author ={Gupta, Kamal and
   Kar, Abhishek},
   title = {ASIC: Aligning Sparse 
     in-the-wild Image Collections},
-  journal = {arXiv},
+booktitle={Proceedings of the IEEE 
+International Conference on Computer Vision},
   year = {2023},
 }
                 </pre>
@@ -966,6 +1014,9 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('lunerf_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('unsup_abs');
   </script>
 </body>
 </html>
