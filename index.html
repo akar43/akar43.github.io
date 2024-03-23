@@ -68,7 +68,7 @@
 
 
 		    <p>
-I am currently a research lead at <a href="https://arvr.google.com/">Google AR/VR.</a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos and Pixel</a> and portrait mode for Google Pixel.<br><br>
+I am currently a research and development lead at <a href="https://arvr.google.com/">Google AR.</a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos and Pixel</a> and portrait mode for Google Pixel.<br><br>
 Prior to Google, I was the Director of Machine Learning at <a href="https://fyusion.com">Fyusion Inc.</a>, a spatial photography startup based in San Francisco where we shipped multiple 3D technologies including <a href="https://bmild.github.io/llff/">casual light field capture</a>, <a href="https://fyusion.com/inspect3d/">AI-driven damage estimation</a>, creation of <a href="https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/">user generated AR/VR content</a> and <a href="https://blog.fyu.se/all-stories/introducing-whisky16">real-time style transfer on mobile devices</a>.
 I graduated from UC Berkeley in 2017 from <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik's</a> group working on learnt 3D object reconstruction.
 I have also spent time at <a href="http://research.microsoft.com/en-us/">Microsoft Research</a> and <a href="https://research.adobe.com/">Adobe Research</a>.
@@ -91,11 +91,204 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
     </table>
         
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+      
+      <tr>
+            <td width="33%" valign="top"><a href="nerfiller.mp4"><img src="nerfiller.gif" width="75%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://ethanweber.me/nerfiller/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>NeRFiller: Completing Scenes via Generative 3D Inpainting</heading></a><br>
+              <a href="https://ethanweber.me/">Ethan Weber</a>,
+              <a href="https://holynski.org/">Aleksander Hołyński</a>,
+              <a href="https://varunjampani.github.io/">Varun Jampani</a>,
+              <a href="https://scholar.google.com/citations?user=WTz38osAAAAJ&hl=en">Saurabh Saxena</a>,
+              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, 
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://people.eecs.berkeley.edu/~kanazawa/">Angjoo Kanazawa</a><br>
+              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br></p>
+
+              <div class="paper" id="nerfiller">
+                <a href="https://ethanweber.me/nerfiller/">project</a> /
+                <a href="http://arxiv.org/abs/2312.04560">paper</a> /
+                <a href="javascript:toggleblock('nerfiller_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('nerfiller')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="nerfiller_abs">We propose NeRFiller, an approach that completes missing portions of a 3D capture via generative 3D inpainting using off-the-shelf 2D visual generative models. Often parts of a captured 3D scene or object are missing due to mesh reconstruction failures or a lack of observations (e.g., contact regions, such as the bottom of objects, or hard-to-reach areas). We approach this challenging 3D inpainting problem by leveraging a 2D inpainting diffusion model. We identify a surprising behavior of these models, where they generate more 3D consistent inpaints when images form a 2x2 grid, and show how to generalize this behavior to more than four images. We then present an iterative framework to distill these inpainted regions into a single consistent 3D scene. In contrast to related works, we focus on completing scenes rather than deleting foreground objects, and our approach does not require tight 2D object masks or text. We compare our approach to relevant baselines adapted to our setting on a variety of scenes, where NeRFiller creates the most 3D consistent and plausible scene completions.</i></p>
+  
+                <pre xml:space="preserve">
+@inproceedings{weber2023nerfiller,
+  title = {NeRFiller: Completing Scenes 
+    via Generative 3D Inpainting},
+  author = {Ethan Weber and 
+    Aleksander Holynski and 
+    Varun Jampani and 
+    Saurabh Saxena and
+    Noah Snavely and 
+    Abhishek Kar and 
+    Angjoo Kanazawa},
+  booktitle = {CVPR},
+  year = {2024},
+}
+}
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+      
+      <tr>
+            <td width="33%" valign="top"><a href="shinobi.gif"><img src="shinobi.gif" width="100%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://shinobi.aengelhardt.com/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>SHINOBI: Shape and Illumination using Neural Object Decomposition via BRDF Optimization In-the-wild</heading></a><br>
+              <a href="https://uni-tuebingen.de/fakultaeten/mathematisch-naturwissenschaftliche-fakultaet/fachbereiche/informatik/lehrstuehle/computergrafik/lehrstuhl/mitarbeiter/andreas-engelhardt/">Andreas Engelhardt</a>,
+              <a href="https://amitraj93.github.io/">Amit Raj</a>,
+              <a href="http://markboss.me">Mark Boss</a>,
+              <a href="https://cs.stanford.edu/~yzzhang/">Yunzhi Zhang</a>,
+              <strong>Abhishek Kar</strong>, 
+              <a href="http://people.csail.mit.edu/yzli/">Yuanzhen Li</a>, 
+              <a href="http://ricardomartinbrualla.com/">Ricardo Martin Brualla</a>, 
+              <a href="https://deqings.github.io/">Deqing Sun</a>, 
+              <a href="https://jonbarron.info/">Jonathan T. Barron</a>, 
+              <a href="https://scholar.google.com/citations?user=2R22h84AAAAJ&hl=en">Hendrik P. A. Lensch</a>, 
+              <a href="https://varunjampani.github.io/">Varun Jampani</a><br>
+              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br></p>
+
+              <div class="paper" id="shinobi">
+                <a href="https://shinobi.aengelhardt.com/">project</a> /
+                <a href="https://www.youtube.com/watch?v=m_5kvtlDnl4">video</a> /
+                <a href="https://arxiv.org/abs/2401.10171">paper</a> /
+                <a href="javascript:toggleblock('shinobi_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('shinobi')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="shinobi_abs">We present SHINOBI, an end-to-end framework for the reconstruction of shape, material, and illumination from object images captured with varying lighting, pose, and background. Inverse rendering of an object based on unconstrained image collections is a long-standing challenge in computer vision and graphics and requires a joint optimization over shape, radiance, and pose. We show that an implicit shape representation based on a multi-resolution hash encoding enables faster and robust shape reconstruction with joint camera alignment optimization that outperforms prior work. Further, to enable the editing of illumination and object reflectance (i.e. material) we jointly optimize BRDF and illumination together with the object's shape. Our method is class-agnostic and works on in-the-wild image collections of objects to produce relightable 3D assets for several use cases such as AR/VR, movies, games, etc.</i></p>
+                <pre xml:space="preserve">
+@inproceedings{engelhardt2024-shinobi,
+  author = {Engelhardt, Andreas and 
+    Raj, Amit and
+    Boss, Mark and
+    Zhang, Yunzhi and
+    Kar, Abhishek and 
+    Li, Yuanzhen and 
+    Sun, Deqing and 
+    Martin Brualla, Ricardo and
+    Barron, Jonathan T. and 
+    Lensch, Hendrik P.A. and 
+    Jampani, Varun},
+    title = {SHINOBI: Shape and Illumination
+      using Neural Object Decomposition 
+      via BRDF Optimization In-the-wild},
+    venue={Computer Vision and Pattern Recognition (CVPR)},
+  year = {2024}
+}
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+      
+      <tr>
+            <td width="33%" valign="top"><a href="accel_nf.png"><img src="accel_nf.png" width="80%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://ubc-vision.github.io/nf-soft-mining/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>Accelerating Neural Field Training via Soft Mining</heading></a><br>
+              <a href="https://shakibakh.github.io/">Shakiba Kheradmand</a>, 
+              <a href="http://drebain.com/">Daniel Rebain</a>,
+              <a href="https://hippogriff.github.io/">Gopal Sharma</a>, 
+              <a href="http://www.hossamisack.com/">Hossam Isack</a>,
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://taiya.github.io/">Andrea Tagliasacchi</a>,
+              <a href="https://www.cs.ubc.ca/~kmyi/">Kwang Moo Yi</a><br>
+              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br></p>
+
+              <div class="paper" id="accel_nf">
+                <a href="https://ubc-vision.github.io/nf-soft-mining/">project</a> /
+                <a href="https://arxiv.org/abs/2312.00075">paper</a> /
+                <a href="javascript:toggleblock('accel_nf_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('accel_nf')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="accel_nf_abs">We present an approach to accelerate Neural Field training by efficiently selecting sampling locations. While Neural Fields have recently become popular, it is often trained by uniformly sampling the training domain, or through handcrafted heuristics. We show that improved convergence and final training quality can be achieved by a soft mining technique based on importance sampling: rather than either considering or ignoring a pixel completely, we weigh the corresponding loss by a scalar. To implement our idea we use Langevin Monte-Carlo sampling. We show that by doing so, regions with higher error are being selected more frequently, leading to more than 2x improvement in convergence speed.</i></p>
+  
+                <pre xml:space="preserve">
+@inproceedings{kheradmand2024softmining,
+  title={Accelerating Neural Field Training via Soft Mining},
+  year={2024},
+  venue={Computer Vision and Pattern Recognition (CVPR)},
+  arxiv={https://arxiv.org/abs/2312.00075},
+  authors={Shakiba Kheradmand and 
+    Daniel Rebain and 
+    Gopal Sharma and 
+    Hossam Isack and 
+    Abhishek Kar and 
+    Andrea Tagliasacchi and 
+    Kwang Moo Yi}
+}
+}
+      
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+      
+      <tr>
+            <td width="33%" valign="top"><a href="unsup_kp.gif"><img src="unsup_kp.gif" width="80%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://stablekeypoints.github.io/" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>Unsupervised Keypoints from Pretrained Diffusion Models</heading></a><br>
+              <a href="https://ehedlin.github.io/">Eric Hedlin</a>, 
+              <a href="https://hippogriff.github.io/">Gopal Sharma</a>, 
+              <a href="https://s-mahajan.github.io/">Shweta Mahajan</a>, 
+              <a href="http://www.hossamisack.com/">Hossam Isack</a>,
+              <strong>Abhishek Kar</strong>, 
+              <a href="https://helge.rhodin.de/index.html/">Helge Rhodin</a>,
+              <a href="https://taiya.github.io/">Andrea Tagliasacchi</a>,
+              <a href="https://www.cs.ubc.ca/~kmyi/">Kwang Moo Yi</a><br>
+              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br></p>
+
+              <div class="paper" id="unsup_kp">
+                <a href="https://stablekeypoints.github.io/">project</a> /
+                <a href="https://arxiv.org/abs/2312.00065">paper</a> /
+                <a href="javascript:toggleblock('unsup_kp_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('unsup_kp')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="unsup_kp_abs">Unsupervised learning of keypoints and landmarks has seen significant progress with the help of modern neural network architectures, but performance is yet to match the supervised counterpart, making their practicability questionable. We leverage the emergent knowledge within text-to-image diffusion models, towards more robust unsupervised keypoints. Our core idea is to find text embeddings that would cause the generative model to consistently attend to compact regions in images (i.e. keypoints). To do so, we simply optimize the text embedding such that the cross-attention maps within the denoising network are localized as Gaussians with small standard deviations. We validate our performance on multiple dataset: the CelebA, CUB-200-2011, Tai-Chi-HD, DeepFashion, and Human3.6m datasets. We achieve significantly improved accuracy, sometimes even outperforming supervised ones, particularly for data that is non-aligned and less curated.</i></p>
+  
+                <pre xml:space="preserve">
+@inproceedings{hedlin2024keypoints,
+  title={Unsupervised Keypoints from 
+    Pretrained Diffusion Models},
+  year={2024},
+  venue={Computer Vision and Pattern Recognition (CVPR)},
+  arxiv={https://arxiv.org/abs/2312.00065},
+  authors={Eric Hedlin and 
+    Gopal Sharma and 
+    Shweta Mahajan and 
+    Hossam Isack and 
+    Abhishek Kar and 
+    Helge Rhodin and 
+    Andrea Tagliasacchi and 
+    Kwang Moo Yi}
+}
+}
+      
+                  </pre>
+                </div>
+            </td>
+
+        </tr>
+      
       <tr>
             <td width="33%" valign="top"><a href="unsup_corr.png"><img src="unsup_corr.png" width="80%" class="center" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://ubc-vision.github.io/LDM_correspondences/" id="">
-                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
               <heading>Unsupervised Semantic Correspondence Using Stable Diffusion</heading></a><br>
               <a href="https://ehedlin.github.io/">Eric Hedlin</a>, 
               <a href="https://hippogriff.github.io/">Gopal Sharma</a>, 
@@ -142,7 +335,6 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
             <td width="33%" valign="top"><a href="https://depth-gen.github.io/assets/meeting.mp4"><img src="depthgen/meeting.gif" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://diffusion-vision.github.io/" id="">
-                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
               <heading>The Surprising Effectiveness of Diffusion Models for Optical Flow and Monocular Depth Estimation</heading></a><br>
               <a href="https://scholar.google.com/citations?user=WTz38osAAAAJ&hl=en">Saurabh Saxena</a>, 
               <a href="https://scholar.google.com/citations?user=LQvi5XAAAAAJ&hl=en">Charles Hermnann</a>, 
@@ -191,7 +383,6 @@ primaryClass={cs.CV}
           <td width="33%" valign="top"><a href="https://kampta.github.io/asic/"><img src="asic/asic.gif" width="70%" class="center" style="border-style: none;"></a>
           <td width="67%" valign="top">
             <p><a href="https://kampta.github.io/asic/" id="">
-            <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
             <heading>ASIC: Aligning Sparse in-the-wild Image Collections</heading></a><br>
             <a href="https://kampta.github.io/">Kamal Gupta</a>, 
             <a href="https://varunjampani.github.io/">Varun Jampani</a>, 
@@ -236,7 +427,6 @@ International Conference on Computer Vision},
             <td width="33%" valign="top"><a href="https://people.cs.umass.edu/~zezhoucheng/lu-nerf"><img src="lunerf/lunerf.jpg" width="100%" style="border-style: none"></a>
             <td width="67%" valign="top">
               <p><a href="https://people.cs.umass.edu/~zezhoucheng/lu-nerf/" id="">
-                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
               <heading>LU-NeRF: Scene and Pose Estimation by Synchronizing Local Unposed NeRFs</heading></a><br>
               <a href="http://people.cs.umass.edu/~zezhoucheng">Zezhou Cheng</a>, 
               <a href="https://machc.github.io/">Carlos Esteves</a>, 
@@ -951,7 +1141,7 @@ organization={ACM}
 		<tr><td>
 		<br>
         <p align="right"><font size="2">
-<a href="http://www.cs.berkeley.edu/~barron/">this guy's website is awesome</a>
+<a href="https://jonbarron.info">yet another Jon Barron website</a>
 </font></p>
 
 </td></tr>
@@ -1017,6 +1207,18 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('unsup_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('unsup_kp_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('accel_nf_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('shinobi_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('nerfiller_abs');
   </script>
 </body>
 </html>
