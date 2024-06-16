@@ -68,7 +68,7 @@
 
 
 		    <p>
-I am currently a research and development lead at <a href="https://arvr.google.com/">Google AR.</a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos and Pixel</a> and portrait mode for Google Pixel.<br><br>
+I am currently an applied research lead at <a href="https://arvr.google.com/">Google AR.</a> where we work on problems at the intersection of 3D computer vision, computer graphics, computational photography and machine learning. Some features I have worked on and shipped at Google include the <a href="https://developers.google.com/ar/develop/depth">ARCore Depth API</a>, <a href="https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/">Cinematic Memories for Google Photos and Pixel</a> and portrait mode for Google Pixel.<br><br>
 Prior to Google, I was the Director of Machine Learning at <a href="https://fyusion.com">Fyusion Inc.</a>, a spatial photography startup based in San Francisco where we shipped multiple 3D technologies including <a href="https://bmild.github.io/llff/">casual light field capture</a>, <a href="https://fyusion.com/inspect3d/">AI-driven damage estimation</a>, creation of <a href="https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/">user generated AR/VR content</a> and <a href="https://www.producthunt.com/products/whisky16">real-time style transfer on mobile devices</a>.
 I graduated from UC Berkeley in 2017 from <a href="http://www.cs.berkeley.edu/~malik/">Jitendra Malik's</a> group working on learnt 3D object reconstruction.
 I have also spent time at <a href="http://research.microsoft.com/en-us/">Microsoft Research</a> and <a href="https://research.adobe.com/">Adobe Research</a>.
@@ -137,6 +137,47 @@ I have also spent time at <a href="http://research.microsoft.com/en-us/">Microso
 
         </tr>
       
+        <tr>
+            <td width="33%" valign="top"><a href="probe3d.png"><img src="probe3d.png" width="100%" class="center" style="border-style: none"></a>
+            <td width="67%" valign="top">
+              <p><a href="https://github.com/mbanani/probe3d" id="">
+                <img src="./new.png" alt="[NEW]" width="6%" style="border-style: none">
+              <heading>Probing the 3D Awareness of Visual Foundation Models</heading></a><br>
+              <a href="http://mbanani.github.io">Mohamed El Banani</a>, <a href="https://amitraj93.github.io/" rel="nofollow">Amit Raj</a>, <a href="https://www.kmaninis.com/" rel="nofollow">Kevis-Kokitsi Maninis</a>, <a href="https://abhishekkar.info/" rel="nofollow">Abhishek Kar</a>, <a href="https://people.csail.mit.edu/yzli/" rel="nofollow">Yuanzhen Li</a>, <a href="https://people.csail.mit.edu/mrub/" rel="nofollow">Michael Rubinstein</a>, <a href="https://deqings.github.io/" rel="nofollow">Deqing Sun</a>, <a href="https://geometry.stanford.edu/member/guibas/" rel="nofollow">Leonidas Guibas</a>, <a href="https://web.eecs.umich.edu/~justincj/" rel="nofollow">Justin Johnson</a>,  <a href="https://varunjampani.github.io/" rel="nofollow">Varun Jampani</a>
+              <br>
+              <em>Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+              <br></p>
+
+              <div class="paper" id="probe3d">
+                <a href="https://arxiv.org/abs/2404.08636">paper</a> /
+                <a href="javascript:toggleblock('probe3d_abs')">abstract</a> /
+                <a shape="rect" href="javascript:togglebib('probe3d')" class="togglebib">bibtex</a>
+		      
+                <p align="justify"> <i id="probe3d_abs">Recent advances in large-scale pretraining have yielded visual foundation models with strong capabilities. Not only can recent models generalize to arbitrary images for their training task, their intermediate representations are useful for other visual tasks such as detection and segmentation. Given that such models can classify, delineate, and localize objects in 2D, we ask whether they also represent their 3D structure? In this work, we analyze the 3D awareness of visual foundation models. We posit that 3D awareness implies that representations (1) encode the 3D structure of the scene and (2) consistently represent the surface across views. We conduct a series of experiments using task-specific probes and zero-shot inference procedures on frozen features. Our experiments reveal several limitations of the current models.</i></p>
+                <pre xml:space="preserve">
+@inproceedings{elbanani2024probe3d,
+title = {{Probing the 3D Awareness of 
+  Visual Foundation Models}},
+author = {El Banani, Mohamed and 
+  Raj, Amit and 
+  Maninis, Kevis-Kokitsi and 
+  Kar, Abhishek and 
+  Li, Yuanzhen and 
+  Rubinstein, Michael and 
+  Sun, Deqing and 
+  Guibas, Leonidas and 
+  Johnson, Justin and 
+  Jampani, Varun},
+booktitle = {CVPR},
+year = {2024},
+}
+                  </pre>
+                </div>
+            </td>
+
+        </tr>  
+
+
       <tr>
             <td width="33%" valign="top"><a href="shinobi.gif"><img src="shinobi.gif" width="100%" class="center" style="border-style: none"></a>
             <td width="67%" valign="top">
@@ -1219,6 +1260,9 @@ hideblock('3rcv_abs');
   </script>
   <script xml:space="preserve" language="JavaScript">
   hideblock('nerfiller_abs');
+  </script>
+  <script xml:space="preserve" language="JavaScript">
+  hideblock('probe3d_abs');
   </script>
 </body>
 </html>
