@@ -1,0 +1,28 @@
+# The header and "About" text. Markdown is allowed in `bio`.
+name: Abhishek Kar
+headline: Building 3D, avatar and camera technology that ships to people at scale.
+location: San Francisco, CA
+photo: images/AK_headshot.png
+
+# Short paragraphs, newest first.
+bio: |
+  I work at **Meta** on the future of social connection with the
+  [Codec Avatars](https://junxuan-li.github.io/lca/) team — photorealistic
+  telepresence, from large-scale avatar models to hologram calling on Meta's
+  glasses.
+
+  Before Meta I spent 4.5 years at **Google AR**, leading applied research that
+  shipped: I was the architect for mixed reality passthrough and spatialization on
+  Samsung Galaxy XR, founded the photo and video spatialization work in Google
+  Photos, and shipped the ARCore Depth API, Cinematic photos and Pixel portrait mode.
+
+  Earlier, I was Director of Machine Learning at **Fyusion**, a spatial photography
+  startup, and did my PhD at **UC Berkeley** with Jitendra Malik on learned 3D
+  reconstruction.
+
+links:
+  - { label: Email, url: "mailto:akar@berkeley.edu" }
+  - { label: LinkedIn, url: "https://www.linkedin.com/in/abhishekkar/" }
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?user=TIpmrtoAAAAJ&hl=en" }
+  - { label: GitHub, url: "https://github.com/akar43" }
+

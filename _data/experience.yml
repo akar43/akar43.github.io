@@ -1,0 +1,36 @@
+# Career, newest first. `title` may be left empty.
+- org: Meta
+  title: ""
+  dates: 2024 – present
+  place: San Francisco Bay Area
+  summary: Codec Avatars — photorealistic telepresence and hologram calling.
+
+- org: Google AR
+  title: Applied Research Lead
+  dates: 2020 – 2024
+  place: San Francisco Bay Area
+  summary: 3D vision, computational photography and XR — Galaxy XR passthrough, spatial photos, ARCore Depth, Cinematic photos.
+
+- org: Fyusion
+  title: Director of Machine Learning
+  dates: 2017 – 2020
+  place: San Francisco
+  summary: Spatial photography — light fields, 3D capture, AI damage inspection.
+
+- org: UC Berkeley
+  title: PhD, Computer Science
+  dates: – 2017
+  place: Berkeley, CA
+  summary: Learned 3D object reconstruction with Jitendra Malik. CVPR Best Student Paper.
+
+- org: Microsoft Research · Adobe Research
+  title: Research internships
+  dates: ""
+  place: ""
+  summary: ""
+
+- org: IIT Kanpur
+  title: B.Tech, Computer Science
+  dates: – 2012
+  place: Kanpur, India
+  summary: ""

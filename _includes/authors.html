@@ -1,0 +1,12 @@
+{%- comment -%}
+  Author line with "Abhishek Kar" bolded. Long lists (over 12 names) collapse to
+  first three … Abhishek Kar … last, with the full list one click away.
+{%- endcomment -%}
+{%- assign me = "Abhishek Kar" -%}
+{%- assign names = include.authors | split: ", " -%}
+{%- capture full -%}{{ include.authors | replace: me, "<strong>Abhishek Kar</strong>" }}{%- endcapture -%}
+{%- if names.size > 12 -%}
+<details class="authors-long"><summary>{{ names[0] }}, {{ names[1] }}, {{ names[2] }}, … {% for n in names %}{% if n contains me %}<strong>{{ n }}</strong>, {% endif %}{% endfor %}… {{ names.last }} <span class="more">+{{ names.size | minus: 5 }} more</span></summary>{{ full }}</details>
+{%- else -%}
+{{ full }}
+{%- endif -%}

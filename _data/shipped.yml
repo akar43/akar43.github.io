@@ -1,0 +1,87 @@
+# Products and features shipped. Newest first.
+# Fields: title, org, year, summary, link (optional), image (optional), video (optional, looping mp4;
+# image is its poster). Items without an image get a plain typographic tile.
+- title: Hologram calling
+  org: Meta
+  year: "2026"
+  summary: >-
+    Photoreal holograms of you in calls on Meta VR Glasses and Meta Ray-Ban
+    Display, shown at Connect 2026 — years of telepresence research packaged
+    into a seamless calling experience.
+  link: https://www.meta.com/blog/meta-vr-glasses-announcement-meta-connect
+  image: assets/img/work/meta-vr-glasses.webp
+
+- title: Large-scale Codec Avatars
+  org: Meta
+  year: "2026"
+  summary: >-
+    Photoreal full-body avatars from a quick phone scan, trained on
+    internet-scale data — bringing the LLM pre/post-training recipe to 3D humans.
+  link: https://junxuan-li.github.io/lca/
+  image: assets/img/pubs/lca.jpg
+  video: assets/img/pubs/lca.mp4
+
+- title: Mixed reality passthrough on Galaxy XR
+  org: Google · Samsung
+  year: "2025"
+  summary: >-
+    Architect of the passthrough perception stack, built from the ground up:
+    real-time depth, view reprojection and image enhancement on a tight
+    compute and latency budget. UploadVR called it "the best on the market yet."
+  link: https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/
+  image: assets/img/work/galaxy-xr-mashable.jpg
+
+- title: Spatial photos & videos
+  org: Google Photos · Android XR
+  year: "2025"
+  summary: >-
+    Founded and led early development of spatialization — turning any 2D photo
+    or video into 3D. Now a central experience in Google Photos on XR.
+  link: https://mashable.com/article/samsung-galaxy-xr-headset-first-impressions
+  image: assets/img/work/android-xr.webp
+
+- title: Cinematic photos
+  org: Google Photos & Pixel
+  year: "2021"
+  summary: >-
+    Single-image 3D photography that brings memories to life with camera motion,
+    built on our SLIDE research.
+  link: https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/
+  image: slide/slide_teaser.gif
+
+- title: ARCore Depth API
+  org: Google
+  year: "2020"
+  summary: >-
+    Real-time depth from a single moving phone camera, bringing occlusion and
+    physics to AR on everyday Android phones.
+  link: https://developers.google.com/ar/develop/depth
+  image: assets/img/work/arcore-depth.jpg
+
+- title: Portrait mode
+  org: Google Pixel
+  year: "2020"
+  summary: Learned depth and defocus for Pixel's portrait mode.
+
+- title: Casual light field capture
+  org: Fyusion
+  year: "2019"
+  summary: >-
+    Phone-captured, photorealistic 3D product views — the production system behind
+    Local Light Field Fusion (SIGGRAPH 2019).
+  link: https://bmild.github.io/llff/
+  image: llff.gif
+
+- title: AI damage inspection
+  org: Fyusion
+  year: "2019"
+  summary: Multi-view damage detection for vehicles from a walk-around capture.
+  link: https://fyusion.com/inspect3d/
+
+- title: User-generated AR/VR content & mobile style transfer
+  org: Fyusion
+  year: "2016"
+  summary: >-
+    3D capture for everyday users, and real-time neural style transfer on phones
+    (Whisky16).
+  link: https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/

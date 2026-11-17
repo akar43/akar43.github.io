@@ -1,0 +1,17 @@
+{%- assign p = include.pub -%}
+<article class="pub" id="{{ p.id }}">
+  <a class="pub-media" href="{{ p.url | default: p.image | relative_url }}" tabindex="-1" aria-hidden="true">{% include media.html item=p %}</a>
+  <div class="pub-body">
+    <h3 class="pub-title">{% if p.url %}<a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</h3>
+    <div class="pub-authors">{% include authors.html authors=p.authors %}</div>
+    <div class="pub-venue"><span>{{ p.venue }} {{ p.year }}</span>{% if p.award %}<span class="badge">{{ p.award }}</span>{% endif %}</div>
+    <div class="pub-links">
+      {%- if p.url -%}<a class="chip" href="{{ p.url | relative_url }}">{% if p.url contains ".pdf" %}pdf{% else %}project{% endif %}</a>{%- endif -%}
+      {%- for l in p.links -%}<a class="chip" href="{{ l.url | relative_url }}">{{ l.label }}</a>{%- endfor -%}
+      {%- if p.abstract -%}<button class="chip" type="button" aria-expanded="false" aria-controls="{{ p.id }}-abs">abstract</button>{%- endif -%}
+      {%- if p.bibtex -%}<button class="chip" type="button" aria-expanded="false" aria-controls="{{ p.id }}-bib">bibtex</button>{%- endif -%}
+    </div>
+    {%- if p.abstract -%}<p class="drawer" id="{{ p.id }}-abs" hidden>{{ p.abstract }}</p>{%- endif -%}
+    {%- if p.bibtex -%}<div class="drawer bib" id="{{ p.id }}-bib" hidden><button class="copy" type="button">Copy</button><pre>{{ p.bibtex | escape }}</pre></div>{%- endif -%}
+  </div>
+</article>
