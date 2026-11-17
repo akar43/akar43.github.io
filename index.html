@@ -11,7 +11,7 @@ layout: default
     <p class="links">{% for l in profile.links %}<a class="btn{% if forloop.first %} btn-primary{% endif %}" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
   </div>
   <figure class="hero-photo">
-    <img src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}" width="320" height="320">
+    <img src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}" width="640" height="960">
   </figure>
 </section>
 
