@@ -51,7 +51,7 @@ optionally `link`, `image` and `video`. Cards without an image show a plain tile
 On the mini PC (Docker, no Ruby needed), from any device on Tailscale:
 
 ```sh
-./preview.sh start   # http://100.93.187.103:4000/ — reloads when you save a file
+./preview.sh start   # http://100.93.187.103:8124/site/ — rebuilds when you save; refresh to see it
 ./preview.sh stop
 ```
 
