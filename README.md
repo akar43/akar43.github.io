@@ -46,12 +46,16 @@ Thumbnails are shown at 4:3. Keep videos small (a few MB at most).
 Add an entry to `_data/shipped.yml` with `title`, `org`, `year`, `summary`, and
 optionally `link`, `image` and `video`. Cards without an image show a plain tile.
 
-## Preview locally (optional)
+## Preview
+
+On the mini PC (Docker, no Ruby needed), from any device on Tailscale:
 
 ```sh
-bundle install
-bundle exec jekyll serve   # http://localhost:4000
+./preview.sh start   # http://100.93.187.103:4000/ — reloads when you save a file
+./preview.sh stop
 ```
+
+It serves whatever branch the clone is on. Elsewhere: `bundle install && bundle exec jekyll serve`.
 
 Older project pages (`categoryShapes/`, `lsm/`, `muse-whoop-privacy/`) and the
 original paper assets stay at their old URLs.

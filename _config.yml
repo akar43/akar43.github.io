@@ -11,6 +11,7 @@ permalink: pretty
 
 exclude:
   - README.md
+  - preview.sh
   - LICENSE
   - Gemfile
   - Gemfile.lock
