@@ -1,8 +1,8 @@
 # Site settings. Content lives in _data/*.yml — see README.md.
 title: Abhishek Kar
 description: >-
-  Abhishek Kar builds 3D vision, avatar and computational photography technology
-  that ships to people at scale — at Meta, previously Google AR and Fyusion.
+  Abhishek Kar builds the technology people use to capture, create and experience
+  visual media, on phones and in mixed reality: Meta Reality Labs, previously Google and Fyusion.
 url: https://abhishekkar.info
 lang: en
 
@@ -12,9 +12,6 @@ permalink: pretty
 exclude:
   - README.md
   - preview.sh
-  - LICENSE
   - Gemfile
   - Gemfile.lock
   - vendor
-  - test_imgs
-  - "*.pptx"

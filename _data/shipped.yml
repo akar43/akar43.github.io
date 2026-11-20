@@ -16,7 +16,7 @@
   year: "2026"
   summary: >-
     Photoreal full-body avatars from a quick phone scan, trained on
-    internet-scale data — bringing the LLM pre/post-training recipe to 3D humans.
+    internet-scale data — bringing the LLM pre/post-training recipe to digital humans.
   link: https://junxuan-li.github.io/lca/
   image: assets/img/pubs/lca.jpg
   video: assets/img/pubs/lca.mp4
@@ -25,9 +25,9 @@
   org: Google · Samsung
   year: "2025"
   summary: >-
-    Architect of the passthrough perception stack, built from the ground up:
-    real-time depth, view reprojection and image enhancement on a tight
-    compute and latency budget. UploadVR called it "the best on the market yet."
+    Uber-TL for the passthrough technology stack: on-device real-time depth,
+    view reprojection and image enhancement, built from the ground up with
+    product, UX, OEM and hardware partners. UploadVR called it "the best on the market yet."
   link: https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/
   image: assets/img/work/galaxy-xr-mashable.jpg
 
@@ -35,18 +35,18 @@
   org: Google Photos · Android XR
   year: "2025"
   summary: >-
-    Founded and led early development of spatialization — turning any 2D photo
-    or video into 3D. Now a central experience in Google Photos on XR.
-  link: https://mashable.com/article/samsung-galaxy-xr-headset-first-impressions
+    Founded and led early development of spatialization — turning everyday 2D
+    photos and videos into immersive ones. Now central to Google Photos on XR.
+  link: https://www.theverge.com/tech/908268/android-xr-samsung-galaxy-auto-spatialization-2d-3d
   image: assets/img/work/android-xr.webp
 
 - title: Cinematic photos
   org: Google Photos & Pixel
   year: "2021"
   summary: >-
-    Single-image 3D photography that brings memories to life with camera motion,
-    built on our SLIDE research.
-  link: https://blog.google/products/photos/poem-and-list-so-no-google-photos-memories-are-missed/
+    Depth from a single photo brings memories to life with subtle camera motion
+    in Google Photos.
+  link: https://research.google/blog/the-technology-behind-cinematic-photos/
   image: slide/slide_teaser.gif
 
 - title: ARCore Depth API
@@ -61,7 +61,7 @@
 - title: Portrait mode
   org: Google Pixel
   year: "2020"
-  summary: Learned depth and defocus for Pixel's portrait mode.
+  summary: ML depth for Pixel's portrait mode, part of the monocular depth shipped across 1B+ Android devices.
 
 - title: Casual light field capture
   org: Fyusion
@@ -75,8 +75,10 @@
 - title: AI damage inspection
   org: Fyusion
   year: "2019"
-  summary: Multi-view damage detection for vehicles from a walk-around capture.
-  link: https://fyusion.com/inspect3d/
+  summary: >-
+    Fyusion's flagship feature: detecting and mapping vehicle damage from a phone
+    walk-around. It drove strategic investment and the acquisition by Cox Automotive.
+  link: https://www.coxautoinc.com/press-releases/cox-automotive-acquires-fyusion-purchase-deepens-collaboration-delivers-future-innovations-benefiting-clients/
 
 - title: User-generated AR/VR content & mobile style transfer
   org: Fyusion

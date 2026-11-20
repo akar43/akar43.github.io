@@ -1,0 +1,88 @@
+---
+layout: default
+permalink: /refresh/
+robots: noindex
+---
+{%- assign profile = site.data.profile -%}
+{%- assign pubs = site.data.publications -%}
+<section class="hero wrap">
+  <div class="hero-text">
+    <p class="eyebrow">{{ site.data.experience[0].org }} · {{ profile.location }}</p>
+    <h1>{{ profile.headline }}</h1>
+    <div class="bio">{{ profile.bio | markdownify }}</div>
+    <p class="links">{% for l in profile.links %}<a class="btn{% if forloop.first %} btn-primary{% endif %}" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
+  </div>
+  <figure class="hero-photo">
+    <img src="{{ profile.photo | relative_url }}" alt="Portrait of {{ profile.name }}" width="640" height="960">
+  </figure>
+</section>
+
+<section id="work" class="section wrap">
+  <div class="section-head">
+    <h2>Shipped work</h2>
+    <p>Research is most fun when it leaves the lab. Products and features I've built or led.</p>
+  </div>
+  <div class="ship-grid">
+    {%- for s in site.data.shipped -%}
+    <article class="ship">
+      <div class="ship-media">{% if s.image %}{% include media.html item=s %}{% else %}<div class="ship-tile" aria-hidden="true"><span>{{ s.org }}</span></div>{% endif %}</div>
+      <div class="ship-body">
+        <p class="ship-meta"><span class="org">{{ s.org }}</span><span>{{ s.year }}</span></p>
+        <h3>{% if s.link %}<a href="{{ s.link }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</h3>
+        <p>{{ s.summary }}</p>
+      </div>
+    </article>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section id="research" class="section wrap">
+  <div class="section-head">
+    <h2>Selected research</h2>
+    <p>3D vision, neural rendering, generative models and computational photography — {{ pubs.size }} papers with wonderful collaborators.</p>
+  </div>
+  <div class="feature-grid">
+    {%- for p in pubs -%}{%- if p.selected -%}
+    <a class="feature" href="#{{ p.id }}">
+      <div class="feature-media">{% include media.html item=p %}</div>
+      <p class="feature-venue">{{ p.venue }} {{ p.year }}{% if p.award %} · <em>{{ p.award }}</em>{% endif %}</p>
+      <h3>{{ p.title }}</h3>
+    </a>
+    {%- endif -%}{%- endfor -%}
+  </div>
+
+  <div class="pub-list">
+    <h3 class="sub">All publications</h3>
+    {%- assign by_year = pubs | group_by: "year" -%}
+    {%- for g in by_year -%}
+    <div class="year-group">
+      <h4 class="year">{{ g.name }}</h4>
+      <div>{%- for p in g.items -%}{% include publication.html pub=p %}{%- endfor -%}</div>
+    </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+<section id="career" class="section wrap two-col">
+  <div>
+    <div class="section-head"><h2>Career</h2></div>
+    <ol class="timeline">
+      {%- for e in site.data.experience -%}
+      <li>
+        <p class="tl-dates">{{ e.dates }}</p>
+        <div>
+          <h3>{{ e.org }}</h3>
+          {%- if e.title != "" -%}<p class="tl-title">{{ e.title }}</p>{%- endif -%}
+          {%- if e.summary != "" -%}<p class="tl-sum">{{ e.summary }}</p>{%- endif -%}
+        </div>
+      </li>
+      {%- endfor -%}
+    </ol>
+  </div>
+  <div>
+    <div class="section-head"><h2>Honors &amp; teaching</h2></div>
+    <ul class="honors">
+      {%- for h in site.data.honors -%}<li>{{ h.text }}</li>{%- endfor -%}
+    </ul>
+  </div>
+</section>
