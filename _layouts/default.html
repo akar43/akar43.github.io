@@ -9,7 +9,7 @@
   <meta property="og:description" content="{{ site.description | strip }}">
   <meta property="og:image" content="{{ site.url }}/{{ site.data.profile.photo }}">
   <meta property="og:type" content="website">
-  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="canonical" href="{{ site.url }}{{ page.canonical | default: page.url }}">
   {%- if page.robots %}
   <meta name="robots" content="{{ page.robots }}">
   {%- endif %}

@@ -12,7 +12,8 @@ step to run yourself: edit a data file, push, and the site updates in a minute o
 | Papers                      | `_data/publications.yml`    |
 | Career timeline             | `_data/experience.yml`      |
 | Honors & teaching           | `_data/honors.yml`          |
-| Page structure              | `index.html`, `_includes/`  |
+| Page structure              | `_includes/home.html` (`/refresh/` redirects to `/`) |
+| Previous (2024) homepage    | `index-2024.html`, served as-is |
 | Look and feel               | `assets/css/site.css`       |
 
 ## Add a paper
