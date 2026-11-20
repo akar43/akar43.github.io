@@ -1,6 +1,6 @@
 # The header and "About" text. Markdown is allowed in `bio`.
 name: Abhishek Kar
-headline: Building the technology people use to capture, create and experience visual media.
+headline: Building the technology to capture, create and consume rich visual media.
 location: San Francisco, CA
 photo: images/AK_headshot_2026.jpg
 
@@ -22,7 +22,6 @@ bio: |
   acquisition by Cox Automotive, and did my PhD at **UC Berkeley** with Jitendra Malik.
 
 links:
-  - { label: Email, url: "mailto:akar@berkeley.edu" }
   - { label: LinkedIn, url: "https://www.linkedin.com/in/abhishekkar/" }
   - { label: Google Scholar, url: "https://scholar.google.com/citations?user=TIpmrtoAAAAJ&hl=en" }
   - { label: GitHub, url: "https://github.com/akar43" }

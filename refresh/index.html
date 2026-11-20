@@ -7,7 +7,6 @@ robots: noindex
 {%- assign pubs = site.data.publications -%}
 <section class="hero wrap">
   <div class="hero-text">
-    <p class="eyebrow">{{ site.data.experience[0].org }} · {{ profile.location }}</p>
     <h1>{{ profile.headline }}</h1>
     <div class="bio">{{ profile.bio | markdownify }}</div>
     <p class="links">{% for l in profile.links %}<a class="btn{% if forloop.first %} btn-primary{% endif %}" href="{{ l.url }}">{{ l.label }}</a>{% endfor %}</p>
@@ -29,7 +28,7 @@ robots: noindex
       <div class="ship-body">
         <p class="ship-meta"><span class="org">{{ s.org }}</span><span>{{ s.year }}</span></p>
         <h3>{% if s.link %}<a href="{{ s.link }}">{{ s.title }}</a>{% else %}{{ s.title }}{% endif %}</h3>
-        <p>{{ s.summary }}</p>
+        <p>{{ s.summary | markdownify | remove: '<p>' | remove: '</p>' | strip }}</p>
       </div>
     </article>
     {%- endfor -%}

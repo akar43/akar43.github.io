@@ -1,5 +1,5 @@
 # Products and features shipped. Newest first.
-# Fields: title, org, year, summary, link (optional), image (optional), video (optional, looping mp4;
+# Fields: title, org, year, summary (inline Markdown links allowed), link (optional), image (optional), video (optional, looping mp4;
 # image is its poster). Items without an image get a plain typographic tile.
 - title: Hologram calling
   org: Meta
@@ -25,9 +25,9 @@
   org: Google · Samsung
   year: "2025"
   summary: >-
-    Uber-TL for the passthrough technology stack: on-device real-time depth,
-    view reprojection and image enhancement, built from the ground up with
-    product, UX, OEM and hardware partners. UploadVR called it "the best on the market yet."
+    Architect for the passthrough technology stack: on-device real-time depth,
+    novel view synthesis and image enhancement, built from the ground up with
+    product, UX, OEM and hardware partners. Called ["the best on the market yet."](https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/)
   link: https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/
   image: assets/img/work/galaxy-xr-mashable.jpg
 
@@ -40,12 +40,14 @@
   link: https://www.theverge.com/tech/908268/android-xr-samsung-galaxy-auto-spatialization-2d-3d
   image: assets/img/work/android-xr.webp
 
-- title: Cinematic photos
+- title: ML depth from a single image
   org: Google Photos & Pixel
-  year: "2021"
+  year: "2021 – 2024"
   summary: >-
-    Depth from a single photo brings memories to life with subtle camera motion
-    in Google Photos.
+    One monocular depth model behind several camera features:
+    [Cinematic photos](https://research.google/blog/the-technology-behind-cinematic-photos/)
+    in Google Photos, portrait mode on Pixel, and Pixel's
+    [Add Me](https://blog.google/products-and-platforms/devices/pixel/how-google-built-pixel-add-me/).
   link: https://research.google/blog/the-technology-behind-cinematic-photos/
   image: slide/slide_teaser.gif
 
