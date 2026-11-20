@@ -58,11 +58,6 @@
   link: https://developers.google.com/ar/develop/depth
   image: assets/img/work/arcore-depth.jpg
 
-- title: Portrait mode
-  org: Google Pixel
-  year: "2020"
-  summary: ML depth for Pixel's portrait mode, part of the monocular depth shipped across 1B+ Android devices.
-
 - title: Casual light field capture
   org: Fyusion
   year: "2019"
@@ -71,19 +66,3 @@
     Local Light Field Fusion (SIGGRAPH 2019).
   link: https://bmild.github.io/llff/
   image: llff.gif
-
-- title: AI damage inspection
-  org: Fyusion
-  year: "2019"
-  summary: >-
-    Fyusion's flagship feature: detecting and mapping vehicle damage from a phone
-    walk-around. It drove strategic investment and the acquisition by Cox Automotive.
-  link: https://www.coxautoinc.com/press-releases/cox-automotive-acquires-fyusion-purchase-deepens-collaboration-delivers-future-innovations-benefiting-clients/
-
-- title: User-generated AR/VR content & mobile style transfer
-  org: Fyusion
-  year: "2016"
-  summary: >-
-    3D capture for everyday users, and real-time neural style transfer on phones
-    (Whisky16).
-  link: https://venturebeat.com/2016/09/06/fyusion-unveils-mobile-content-creation-platform-for-augmented-reality/
