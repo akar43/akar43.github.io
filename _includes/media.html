@@ -1,7 +1,8 @@
-{%- comment -%} Thumbnail: a looping video when `video` is set, else the image. Pass item=… {%- endcomment -%}
+{%- comment -%} Thumbnail: a looping video when `video` is set (poster = image; site.js loads and plays it
+only while on screen), else the image. Pass item=… {%- endcomment -%}
 {%- assign m = include.item -%}
 {%- if m.video -%}
-<video src="{{ m.video | relative_url }}" poster="{{ m.image | relative_url }}" autoplay loop muted playsinline preload="metadata" aria-label="{{ m.title | escape }}"></video>
+<video data-src="{{ m.video | relative_url }}" poster="{{ m.image | relative_url }}" loop muted playsinline preload="none" aria-label="{{ m.title | escape }}"></video>
 {%- elsif m.image -%}
 <img src="{{ m.image | relative_url }}" alt="{{ m.title | escape }}" loading="lazy" decoding="async">
 {%- endif -%}

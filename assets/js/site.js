@@ -1,4 +1,4 @@
-// Abstract/BibTeX toggles, copy buttons, and paused thumbnails for reduced-motion users.
+// Abstract/BibTeX toggles, copy buttons, and teaser videos that load and play only while on screen.
 document.addEventListener('click', e => {
   const toggle = e.target.closest('[aria-controls]');
   if (toggle) {
@@ -17,6 +17,17 @@ document.addEventListener('click', e => {
   });
 });
 
-if (matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  document.querySelectorAll('video[autoplay]').forEach(v => { v.removeAttribute('autoplay'); v.pause(); });
+// Reduced motion: posters only. Otherwise attach the source near the viewport and play while visible.
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches && 'IntersectionObserver' in window) {
+  const io = new IntersectionObserver(entries => {
+    for (const { target: v, isIntersecting } of entries) {
+      if (isIntersecting) {
+        if (!v.src) v.src = v.dataset.src;
+        v.play().catch(() => {});
+      } else if (!v.paused) {
+        v.pause();
+      }
+    }
+  }, { rootMargin: '200px 0px' });
+  document.querySelectorAll('video[data-src]').forEach(v => io.observe(v));
 }

@@ -18,8 +18,8 @@
     Photoreal full-body avatars from a quick phone scan, trained on
     internet-scale data — bringing the LLM pre/post-training recipe to digital humans.
   link: https://junxuan-li.github.io/lca/
-  image: assets/img/pubs/lca.jpg
-  video: assets/img/pubs/lca.mp4
+  image: assets/img/thumbs/lca.jpg
+  video: assets/img/clips/lca.mp4
 
 - title: Mixed reality passthrough on Galaxy XR
   org: Google · Samsung
@@ -29,7 +29,7 @@
     novel view synthesis and image enhancement, built from the ground up with
     product, UX, OEM and hardware partners. Called ["the best on the market yet."](https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/)
   link: https://www.uploadvr.com/samsung-galaxy-xr-android-xr-first-impressions-hands-on/
-  image: assets/img/work/galaxy-xr-mashable.jpg
+  image: assets/img/thumbs/galaxy-xr-mashable.jpg
 
 - title: Spatial photos & videos
   org: Google Photos · Android XR
@@ -49,7 +49,8 @@
     in Google Photos, portrait mode on Pixel, and Pixel's
     [Add Me](https://blog.google/products-and-platforms/devices/pixel/how-google-built-pixel-add-me/).
   link: https://research.google/blog/the-technology-behind-cinematic-photos/
-  image: slide/slide_teaser.gif
+  image: assets/img/thumbs/slide-slide_teaser.jpg
+  video: assets/img/clips/slide-slide_teaser.mp4
 
 - title: ARCore Depth API
   org: Google
@@ -58,7 +59,7 @@
     Real-time depth from a single moving phone camera, bringing occlusion and
     physics to AR on everyday Android phones.
   link: https://developers.google.com/ar/develop/depth
-  image: assets/img/work/arcore-depth.jpg
+  image: assets/img/thumbs/arcore-depth.jpg
 
 - title: Casual light field capture
   org: Fyusion
@@ -67,4 +68,5 @@
     Phone-captured, photorealistic 3D product views — the production system behind
     Local Light Field Fusion (SIGGRAPH 2019).
   link: https://bmild.github.io/llff/
-  image: llff.gif
+  image: assets/img/thumbs/llff.jpg
+  video: assets/img/clips/llff.mp4

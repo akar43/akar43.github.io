@@ -9,8 +9,8 @@
   venue: "CVPR"
   year: 2026
   selected: true
-  image: assets/img/pubs/lca.jpg
-  video: assets/img/pubs/lca.mp4
+  image: assets/img/thumbs/lca.jpg
+  video: assets/img/clips/lca.mp4
   url: "https://junxuan-li.github.io/lca/"
   links:
     - { label: "arXiv", url: "https://arxiv.org/abs/2604.02320" }
@@ -32,8 +32,8 @@
   year: 2024
   award: "Spotlight"
   selected: true
-  image: assets/img/pubs/3dgs-mcmc.jpg
-  video: assets/img/pubs/3dgs-mcmc.mp4
+  image: assets/img/thumbs/3dgs-mcmc.jpg
+  video: assets/img/clips/3dgs-mcmc.mp4
   url: "https://ubc-vision.github.io/3dgs-mcmc/"
   links:
     - { label: "arXiv", url: "https://arxiv.org/abs/2404.09591" }
@@ -56,7 +56,8 @@
   authors: "Ethan Weber, Aleksander Hołyński, Varun Jampani, Saurabh Saxena, Noah Snavely, Abhishek Kar, Angjoo Kanazawa"
   venue: "CVPR"
   year: 2024
-  image: nerfiller.gif
+  image: assets/img/thumbs/nerfiller.jpg
+  video: assets/img/clips/nerfiller.mp4
   url: "https://ethanweber.me/nerfiller/"
   links:
     - { label: "paper", url: "http://arxiv.org/abs/2312.04560" }
@@ -84,7 +85,7 @@
   venue: "CVPR"
   year: 2024
   selected: true
-  image: probe3d.png
+  image: assets/img/thumbs/probe3d.jpg
   url: "https://github.com/mbanani/probe3d"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2404.08636" }
@@ -113,7 +114,8 @@
   authors: "Andreas Engelhardt, Amit Raj, Mark Boss, Yunzhi Zhang, Abhishek Kar, Yuanzhen Li, Deqing Sun, Ricardo Martin Brualla, Jonathan T. Barron, Hendrik P. A. Lensch, Varun Jampani"
   venue: "CVPR"
   year: 2024
-  image: shinobi.gif
+  image: assets/img/thumbs/shinobi.jpg
+  video: assets/img/clips/shinobi.mp4
   url: "https://shinobi.aengelhardt.com/"
   links:
     - { label: "video", url: "https://www.youtube.com/watch?v=m_5kvtlDnl4" }
@@ -145,7 +147,7 @@
   authors: "Shakiba Kheradmand, Daniel Rebain, Gopal Sharma, Hossam Isack, Abhishek Kar, Andrea Tagliasacchi, Kwang Moo Yi"
   venue: "CVPR"
   year: 2024
-  image: accel_nf.png
+  image: assets/img/thumbs/accel_nf.jpg
   url: "https://ubc-vision.github.io/nf-soft-mining/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2312.00075" }
@@ -172,7 +174,8 @@
   authors: "Eric Hedlin, Gopal Sharma, Shweta Mahajan, Xingzhe He, Hossam Isack, Abhishek Kar, Helge Rhodin, Andrea Tagliasacchi, Kwang Moo Yi"
   venue: "CVPR"
   year: 2024
-  image: unsup_kp.gif
+  image: assets/img/thumbs/unsup_kp.jpg
+  video: assets/img/clips/unsup_kp.mp4
   url: "https://stablekeypoints.github.io/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2312.00065" }
@@ -201,7 +204,7 @@
   authors: "Eric Hedlin, Gopal Sharma, Shweta Mahajan, Hossam Isack, Abhishek Kar, Andrea Tagliasacchi, Kwang Moo Yi"
   venue: "NeurIPS"
   year: 2023
-  image: unsup_corr.png
+  image: assets/img/thumbs/unsup_corr.jpg
   url: "https://ubc-vision.github.io/LDM_correspondences/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2305.15581" }
@@ -230,7 +233,8 @@
   venue: "NeurIPS"
   year: 2023
   selected: true
-  image: depthgen/meeting.gif
+  image: assets/img/thumbs/depthgen-meeting.jpg
+  video: assets/img/clips/depthgen-meeting.mp4
   url: "https://diffusion-vision.github.io/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2306.01923" }
@@ -260,7 +264,8 @@
   authors: "Kamal Gupta, Varun Jampani, Carlos Esteves, Abhinav Shrivastava, Ameesh Makadia, Noah Snavely, Abhishek Kar"
   venue: "ICCV"
   year: 2023
-  image: asic/asic.gif
+  image: assets/img/thumbs/asic-asic.jpg
+  video: assets/img/clips/asic-asic.mp4
   url: "https://kampta.github.io/asic/"
   links:
     - { label: "arXiv", url: "https://arxiv.org/abs/2303.16201" }
@@ -288,7 +293,7 @@
   authors: "Zezhou Cheng, Carlos Esteves, Varun Jampani, Abhishek Kar, Subhransu Maji, Ameesh Makadia"
   venue: "ICCV"
   year: 2023
-  image: lunerf/lunerf.jpg
+  image: assets/img/thumbs/lunerf-lunerf.jpg
   url: "https://zezhoucheng.github.io/lu-nerf/"
   links:
     - { label: "paper", url: "http://arxiv.org/abs/2306.05410" }
@@ -315,7 +320,8 @@
   venue: "CVPR"
   year: 2023
   selected: true
-  image: dc2/dc2.gif
+  image: assets/img/thumbs/dc2-dc2.jpg
+  video: assets/img/clips/dc2-dc2.mp4
   url: "https://defocus-control.github.io/"
   links:
     - { label: "arXiv", url: "https://t.co/bJnAWGcT8b" }
@@ -347,7 +353,8 @@
   venue: "CHI"
   year: 2023
   award: "Best Paper Honorable Mention"
-  image: rapsai/rapsai_img.gif
+  image: assets/img/thumbs/rapsai-rapsai_img.jpg
+  video: assets/img/clips/rapsai-rapsai_img.mp4
   url: "https://duruofei.com/projects/rapsai/"
   links:
     - { label: "blog", url: "https://ai.googleblog.com/2023/04/visual-blocks-for-ml-accelerating.html?m=1" }
@@ -380,7 +387,8 @@
   authors: "Mark Boss, Andreas Engelhardt, Abhishek Kar, Yuanzhen Li, Deqing Sun, Jonathan T. Barron, Hendrik P. A. Lensch, Varun Jampani"
   venue: "NeurIPS"
   year: 2022
-  image: samurai/samurai.gif
+  image: assets/img/thumbs/samurai-samurai.jpg
+  video: assets/img/clips/samurai-samurai.mp4
   url: "https://markboss.me/publications/2022-samurai/"
   links:
     - { label: "video", url: "https://www.youtube.com/watch?v=LlYuGDjXp-8" }
@@ -410,7 +418,7 @@
   authors: "Yunwen Zhou, Abhishek Kar, Eric Turner, Adarsh Kowdle, Chao X. Guo, Ryan C. DuToit, Konstantine Tsotsos"
   venue: "ECCV"
   year: 2022
-  image: vio_init/vio_init.png
+  image: assets/img/thumbs/vio_init-vio_init.jpg
   url: "https://versechow.github.io/monodepth-vio-init"
   links:
     - { label: "video", url: "https://www.youtube.com/watch?v=VYsx7kbJEio" }
@@ -439,7 +447,8 @@
   year: 2021
   award: "Oral"
   selected: true
-  image: slide/slide_teaser.gif
+  image: assets/img/thumbs/slide-slide_teaser.jpg
+  video: assets/img/clips/slide-slide_teaser.mp4
   url: "https://varunjampani.github.io/slide/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/2109.01068" }
@@ -473,7 +482,8 @@
   venue: "SIGGRAPH"
   year: 2019
   selected: true
-  image: llff.gif
+  image: assets/img/thumbs/llff.jpg
+  video: assets/img/clips/llff.mp4
   url: "https://bmild.github.io/llff/"
   links:
     - { label: "paper", url: "https://arxiv.org/abs/1905.00889" }
@@ -501,7 +511,7 @@
   authors: "Zhe Cao, Abhishek Kar, Christian Häne, Jitendra Malik"
   venue: "CVPR"
   year: 2019
-  image: sceneflow/sf-teaser.jpg
+  image: assets/img/thumbs/sceneflow-sf-teaser.jpg
   url: "https://people.eecs.berkeley.edu/~zhecao/sceneflow/"
   links:
     - { label: "paper", url: "https://drive.google.com/open?id=1mTBOJefYp6_ZkWwgshcikQ_AI5nw1t7_" }
@@ -526,7 +536,7 @@
   venue: "NeurIPS (NIPS)"
   year: 2017
   selected: true
-  image: lsm-teaser.png
+  image: assets/img/thumbs/lsm-teaser.jpg
   url: "lsm/lsm_nips17.pdf"
   links:
     - { label: "supplementary", url: "lsm/supplsm.pdf" }
@@ -550,7 +560,7 @@
   authors: "Shubham Tulsiani*, Abhishek Kar*, João Carreira, Jitendra Malik"
   venue: "TPAMI"
   year: 2017
-  image: meanshapes.png
+  image: assets/img/thumbs/meanshapes.jpg
   url: "pamishapes.pdf"
   links:
     - { label: "project", url: "categoryShapes/" }
@@ -573,7 +583,7 @@
   authors: "Jitendra Malik, Pablo Arbeláez, João Carreira, Katerina Fragkiadaki, Ross Girshick, Georgia Gkioxari, Saurabh Gupta, Bharath Hariharan, Abhishek Kar, Shubham Tulsiani"
   venue: "Pattern Recognition Letters"
   year: 2016
-  image: 3r.png
+  image: assets/img/thumbs/3r.jpg
   links:
     - { label: "paper", url: "http://www.sciencedirect.com/science/article/pii/S0167865516000313" }
   abstract: |-
@@ -604,7 +614,7 @@
   authors: "Shubham Tulsiani, Abhishek Kar, Qixing Huang, João Carreira, Jitendra Malik"
   venue: "arXiv"
   year: 2015
-  image: symmetry.png
+  image: assets/img/thumbs/symmetry.jpg
   url: "shapesymmetry.pdf"
   links:
     - { label: "arXiv", url: "https://arxiv.org/abs/1511.07845" }
@@ -628,7 +638,7 @@
   authors: "Abhishek Kar, Shubham Tulsiani, João Carreira, Jitendra Malik"
   venue: "ICCV"
   year: 2015
-  image: amodal.png
+  image: assets/img/thumbs/amodal.jpg
   url: "amodal.pdf"
   links:
     - { label: "supplementary", url: "amodal_supp.pdf" }
@@ -653,7 +663,7 @@
   year: 2015
   award: "Best Student Paper Award · Oral"
   selected: true
-  image: basisshapes.png
+  image: assets/img/thumbs/basisshapes.jpg
   url: "categoryshapes.pdf"
   links:
     - { label: "project", url: "categoryShapes/" }
@@ -679,7 +689,7 @@
   authors: "João Carreira, Abhishek Kar, Shubham Tulsiani, Jitendra Malik"
   venue: "CVPR"
   year: 2015
-  image: vvn.png
+  image: assets/img/thumbs/vvn.jpg
   url: "vvn.pdf"
   links:
     - { label: "video", url: "http://youtu.be/JfDJji5sYXE" }
@@ -703,7 +713,7 @@
   authors: "Neel Joshi, Abhishek Kar, Michael F. Cohen"
   venue: "CHI"
   year: 2012
-  image: lookingatyou.png
+  image: assets/img/thumbs/lookingatyou.jpg
   url: "LookingAtYou.pdf"
   links:
     - { label: "video", url: "chivideo.mp4" }
